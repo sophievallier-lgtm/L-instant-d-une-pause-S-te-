@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+  <title>Massages – L'instant d'une pause</title>
+  <meta name="description" content="Massages bien-être, drainage, palper-rouler manuel, massage signature et massage énergétique à Sète.">
 
-<title>Massages – L'instant d'une pause</title>
-<meta name="description" content="Découvrez les massages bien-être proposés à Sète : massage bien-être, massage énergétique, palper-rouler manuel, drainage manuel confort.">
+  <!-- Polices -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+  <!-- STYLE -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -18,17 +21,21 @@
 <header class="header-bar">
   <div class="header-inner">
 
+    <!-- LOGO -->
     <div class="header-logo">
       <img src="assets/img/logo.jpg" alt="Logo L'instant d'une pause">
     </div>
 
-    <div class="header-text">
-      <p class="header-title">L'instant d'une pause</p>
-      <p class="header-subtitle">Massages bien-être – Sète</p>
+    <!-- TEXTE DU LOGO -->
+    <div class="header-brand">
+      <p class="brand-title">L'instant d'une pause</p>
+      <p class="brand-subtitle">Massages bien-être – Sète</p>
     </div>
 
+    <!-- MENU HAMBURGER -->
     <button id="menu-btn" class="hamburger">☰</button>
 
+    <!-- NAVIGATION -->
     <nav id="menu">
       <a class="nav-link" href="index.html">Accueil</a>
       <a class="nav-link" href="massages.html">Massages</a>
@@ -44,91 +51,91 @@
 <script>
 document.getElementById("menu-btn").onclick = function () {
   const menu = document.getElementById("menu");
-  menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+  menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
 };
 </script>
 
-<main class="page">
-
-<section class="section">
-    <h2 class="page-title" style="text-align:center;">Massages & protocoles</h2>
+<!-- CONTENU -->
+<main>
+  <section class="section">
+    <h2>Massages & protocoles</h2>
 
     <div class="liste-prestations">
 
-      <article class="prestation">
+      <!-- MASSAGE BIEN-ÊTRE -->
+      <div class="prestation">
         <h3>Massage bien-être 1h</h3>
         <p class="duree">1h – Corps complet</p>
         <p>
-          Massage enveloppant, fluide et relaxant, idéal pour relâcher les tensions et apaiser le mental.
-          Un moment de détente profonde pour se recentrer et retrouver du calme intérieur.
+          Massage enveloppant, fluide et relaxant, idéal pour relâcher les tensions
+          et apaiser le mental. Un moment de détente profonde pour se recentrer
+          et retrouver du calme intérieur.
         </p>
-      </article>
+      </div>
 
-      <article class="prestation">
+      <!-- PALPER ROULER -->
+      <div class="prestation">
         <h3>Palper-rouler manuel</h3>
         <p class="duree">Travail ciblé sur la peau</p>
         <p>
-          Technique manuelle zone par zone visant à stimuler les tissus et à améliorer visuellement
-          l’aspect de la peau. Adapté à votre sensibilité et à vos objectifs.
+          Technique manuelle zone par zone visant à stimuler les tissus
+          et à améliorer visuellement l’aspect de la peau.
+          Adapté à votre sensibilité et à vos objectifs.
         </p>
-      </article>
+      </div>
 
-      <article class="prestation">
+      <!-- DRAINAGE -->
+      <div class="prestation">
         <h3>Drainage manuel bien-être</h3>
         <p class="duree">45 min – Zones ciblées</p>
         <p>
-          Massage doux et rythmé apportant une sensation de légèreté et de dégonflement.
-          Idéal pour les jambes lourdes et la récupération.
+          Massage doux et rythmé apportant une sensation de légèreté
+          et de dégonflement. Idéal pour les jambes lourdes et la récupération.
           Exclusivement bien-être (aucun acte médical).
         </p>
-      </article>
+      </div>
 
-      <article class="prestation">
+      <!-- VISAGE -->
+      <div class="prestation">
         <h3>Massage du visage</h3>
         <p class="duree">45 min – Relaxation faciale</p>
         <p>
-          Travail sur les zones du visage, du cou et du crâne pour lisser les traits et libérer les
-          tensions du visage. Effet éclat et profonde détente.
+          Travail sur les zones du visage, du cou et du crâne pour lisser les traits
+          et libérer les tensions. Effet éclat et profonde détente.
         </p>
-      </article>
+      </div>
 
-      <article class="prestation">
-        <h3>Massages signature</h3>
-        <p class="duree">1h30 ou 2h – Corps complet</p>
-        <ul>
-          <li><strong>Signature 1h30 :</strong> corps, pieds & tête.</li>
-          <li><strong>Signature 2h :</strong> corps, pieds, mains, tête & visage.</li>
-        </ul>
+      <!-- SIGNATURE -->
+      <div class="prestation">
+        <h3>Massage signature</h3>
+        <p class="duree">1h30 ou 2h</p>
         <p>
-          Idéal si vous cherchez une détente profonde et une prise en charge complète du corps.
+          Massage complet, intuitif, mêlant différentes techniques pour
+          offrir un relâchement profond et un rééquilibrage énergétique.
         </p>
-      </article>
+      </div>
 
-      <article class="prestation">
+      <!-- ENERGETIQUE -->
+      <div class="prestation">
         <h3>Massage énergétique</h3>
-        <p class="duree">1h30 – Corps & rééquilibrage</p>
+        <p class="duree">1h30</p>
         <p>
-          Pour les périodes de fatigue, surcharge émotionnelle ou perte de motivation.
-          Massage enveloppant + travail sur les zones clés pour recentrer corps & esprit.
+          Travail global sur les flux énergétiques du corps pour libérer,
+          réharmoniser et apaiser profondément.
         </p>
-      </article>
+      </div>
 
     </div>
-</section>
-
+  </section>
 </main>
 
-<footer class="footer">
-  <p>© L'instant d'une pause – Sète</p>
-  <p>Massages bien-être : pratiques de relaxation, sans visée thérapeutique ni médicale.</p>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>© L'instant d'une pause – Sète.</div>
+    <div>Massages bien-être : pratiques de relaxation, sans visée thérapeutique ni médicale.</div>
+  </div>
 </footer>
-
-<script>
-document.getElementById("menu-btn").onclick = function () {
-    const menu = document.getElementById("menu");
-    menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
-};
-</script>
 
 </body>
 </html>
