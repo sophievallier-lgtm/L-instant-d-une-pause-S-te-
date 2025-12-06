@@ -382,3 +382,19 @@ footer {
     margin: 0;
     color: rgba(61,44,33,0.8);
 }
+/* --- Texte tagline sous le logo --- */
+.header-tagline {
+    text-align: center;
+    width: 100%;
+    display: block;
+
+    font-family: "Playfair Display", serif; /* Style élégant */
+    font-size: 1.15rem;
+    font-weight: 400;
+    letter-spacing: 0.12em; /* Raffiné */
+    
+    color: #7a5f4d; /* Brun doux assorti au logo */
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.95;
+}
