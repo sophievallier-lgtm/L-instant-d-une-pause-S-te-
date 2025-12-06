@@ -84,6 +84,11 @@ r
     <p>© L'instant d'une pause – Sète</p>
     <p>Massages bien-être : pratiques de relaxation, sans visée thérapeutique ni médicale.</p>
 </footer>
-
+<script>
+document.getElementById("menu-btn").onclick = function () {
+  const menu = document.getElementById("menu");
+  menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+};
+</script>
 </body>
 </html>
