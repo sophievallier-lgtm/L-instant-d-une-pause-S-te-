@@ -17,35 +17,36 @@
 <body>
 
 <header class="header-bar">
-  <div class="header-inner">
+    <div class="header-inner">
 
-    <!-- LOGO -->
-    <div class="header-logo">
-      <img src="assets/img/logo.jpg" alt="Logo L'instant d'une pause">
+        <!-- LOGO -->
+        <div class="header-logo">
+            <img src="assets/img/logo.jpg" alt="Logo L'instant d'une pause">
+        </div>
+
+        <!-- TEXTE À CÔTÉ DU LOGO -->
+        <div class="header-brand">
+            <p class="brand-title">L'instant d'une pause</p>
+            <p class="brand-subtitle">Massages bien-être – Sète</p>
+        </div>
+
+        <!-- MENU HAMBURGER (MOBILE) -->
+        <button id="menu-btn" class="hamburger">☰</button>
+
+        <!-- MENU -->
+        <nav id="menu">
+            <a class="nav-link" href="index.html">Accueil</a>
+            <a class="nav-link" href="massages.html">Massages</a>
+            <a class="nav-link" href="tarifs.html">Tarifs</a>
+            <a class="nav-link" href="galerie.html">Galerie</a>
+            <a class="nav-link" href="avis.html">Avis clients</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+
     </div>
-
-    <!-- TEXTE DU LOGO -->
-    <div class="header-text">
-      <p class="header-title">L'instant d'une pause</p>
-      <p class="header-subtitle">Massages bien-être – Sète</p>
-    </div>
-
-    <!-- MENU HAMBURGER (MOBILE) -->
-    <button id="menu-btn" class="hamburger">☰</button>
-
-    <!-- MENU -->
-    <nav id="menu">
-      <a class="nav-link" href="index.html">Accueil</a>
-      <a class="nav-link" href="massages.html">Massages</a>
-      <a class="nav-link" href="tarifs.html">Tarifs</a>
-      <a class="nav-link" href="galerie.html">Galerie</a>
-      <a class="nav-link" href="avis.html">Avis clients</a>
-      <a class="nav-link" href="contact.html">Contact</a>
-    </nav>
-
-  </div>
 </header>
 
+<!-- SCRIPT DU MENU MOBILE -->
 <script>
 document.getElementById("menu-btn").onclick = function () {
   const menu = document.getElementById("menu");
@@ -77,19 +78,19 @@ document.getElementById("menu-btn").onclick = function () {
     <h2>Mon approche</h2>
     <div class="carte">
       <p>
-        Je suis praticienne en bien-être et je vous accueille dans un cocon chaleureux, un espace 
+        Je suis praticienne en bien-être et je vous accueille dans un cocon chaleureux,
         entièrement dédié à la détente, au relâchement et à la reconnexion avec vous-même.
       </p>
 
       <p>
-        Chaque massage est intuitif, adapté à votre énergie du moment et à vos besoins. 
+        Chaque massage est intuitif, adapté à votre énergie du moment et à vos besoins.
         J’utilise des manœuvres enveloppantes, douces et profondes pour apaiser le corps,
         relâcher les tensions et offrir une parenthèse de calme intérieur.
       </p>
 
       <p>
-        Mes massages sont des pratiques de détente et de bien-être. Ils ne sont ni médicaux, 
-        ni thérapeutiques, ni esthétiques, et ne remplacent pas un suivi auprès d’un professionnel de santé.
+        Mes massages sont des pratiques de bien-être, non médicaux, non thérapeutiques et non esthétiques.
+        Ils ne remplacent pas un suivi auprès d’un professionnel de santé.
       </p>
     </div>
   </section>
@@ -114,14 +115,6 @@ document.getElementById("menu-btn").onclick = function () {
     <div>Massages bien-être : pratiques de relaxation, sans visée thérapeutique ni médicale.</div>
   </div>
 </footer>
-
-<!-- SCRIPT MENU -->
-<script>
-document.getElementById("menu-btn").onclick = function () {
-    const menu = document.getElementById("menu");
-    menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
-};
-</script>
 
 </body>
 </html>
