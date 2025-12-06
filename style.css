@@ -1,4 +1,3 @@
-
 :root {
   --fond: #f6eee5;
   --carte: #fff8f0;
@@ -32,6 +31,10 @@ img {
   display: block;
 }
 
+/* ----------------------------- */
+/*           HEADER              */
+/* ----------------------------- */
+
 .header-bar {
   position: sticky;
   top: 0;
@@ -50,19 +53,34 @@ img {
   gap: 0.9rem;
 }
 
+/* Logo */
 .header-logo {
-  width: 80px;     /* taille augmentée */
-  height: 80px;    /* taille augmentée */
+  width: 85px;
+  height: 85px;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.18);
   flex-shrink: 0;
 }
 
+.header-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Bloc central : logo + texte */
 .header-brand {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centre parfaitement */
   text-align: center;
+  font-family: "Playfair Display", serif;
+  line-height: 1.2;
 }
+
+/* TITRE PRINCIPAL */
 .header-title {
   margin: 0;
   font-family: "Playfair Display","Times New Roman",serif;
@@ -72,32 +90,27 @@ img {
   color: var(--chocolat-fonce);
 }
 
+/* SOUS-TITRE “massages bien-être – SÈTE” */
 .header-brand .brand-subtitle {
     display: block;
-    width: 100%;
-    text-align: center;
-
     font-family: "Playfair Display", serif;
     font-size: 1.1rem;
     font-weight: 400;
     letter-spacing: 0.12em;
-
     color: #7a5f4d;
-    margin-top: 0.4rem;
+    margin-top: 0.3rem;
     margin-bottom: 0.4rem;
     opacity: 0.95;
-    text-transform: lowercase; /* tout en minuscules */
+    text-transform: lowercase;
 }
-.header-brand {
-    text-align: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* centre le logo + le texte */
-}
+
 .header-brand .brand-subtitle::first-letter {
-    text-transform: uppercase; /* Pour SÈTE ou début si besoin */
+    text-transform: uppercase; /* garde SÈTE correct */
 }
+
+/* ----------------------------- */
+/*             NAV               */
+/* ----------------------------- */
 
 nav {
   display: flex;
@@ -116,6 +129,10 @@ nav {
   border-color: rgba(91,64,50,0.25);
   background: rgba(91,64,50,0.06);
 }
+
+/* ----------------------------- */
+/*             HERO              */
+/* ----------------------------- */
 
 .hero {
   position: relative;
@@ -192,7 +209,7 @@ nav {
   font-size: 0.95rem;
   font-weight: 600;
   text-decoration: none;
-  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.15s ease;
+  transition: all 0.15s ease;
 }
 
 .btn-principal {
@@ -215,6 +232,10 @@ nav {
 .btn-secondaire:hover {
   background: rgba(246,238,229,0.2);
 }
+
+/* ----------------------------- */
+/*            CONTENT            */
+/* ----------------------------- */
 
 main {
   max-width: 1120px;
@@ -244,16 +265,11 @@ main {
   margin: 0.4rem 0;
 }
 
+/* Grilles */
 .grid-2 {
   display: grid;
   grid-template-columns: minmax(0,1.2fr) minmax(0,1fr);
   gap: 1.2rem;
-}
-
-.cabine-photo {
-  border-radius: 22px;
-  overflow: hidden;
-  box-shadow: 0 12px 32px rgba(0,0,0,0.16);
 }
 
 .liste-prestations {
@@ -275,16 +291,9 @@ main {
   color: var(--chocolat-fonce);
 }
 
-.prestation .duree {
-  font-weight: 600;
-  font-size: 0.92rem;
-  color: var(--chocolat);
-}
-
-.prestation p {
-  font-size: 0.9rem;
-  margin: 0.25rem 0;
-}
+/* ----------------------------- */
+/*            TABLEAU            */
+/* ----------------------------- */
 
 .table-tarifs {
   width: 100%;
@@ -310,6 +319,10 @@ main {
   background: #f5eee6;
 }
 
+/* ----------------------------- */
+/*            GALERIE            */
+/* ----------------------------- */
+
 .galerie-grille {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(190px,1fr));
@@ -322,6 +335,10 @@ main {
   box-shadow: 0 10px 26px rgba(0,0,0,0.14);
 }
 
+/* ----------------------------- */
+/*            CONTACT            */
+/* ----------------------------- */
+
 .contact-grid {
   display: grid;
   grid-template-columns: minmax(0,1fr) minmax(0,1.1fr);
@@ -333,6 +350,10 @@ main {
   overflow: hidden;
   box-shadow: 0 12px 32px rgba(0,0,0,0.16);
 }
+
+/* ----------------------------- */
+/*            FOOTER             */
+/* ----------------------------- */
 
 footer {
   background: #2b2018;
@@ -349,20 +370,21 @@ footer {
   gap: 0.4rem;
 }
 
+/* ----------------------------- */
+/*        RESPONSIVE MOBILE      */
+/* ----------------------------- */
+
 @media (max-width: 840px) {
   .hero-content { max-width: 100%; padding: 1.3rem; }
   .hero-overlay { background: linear-gradient(160deg, rgba(0,0,0,0.6) 0, rgba(0,0,0,0.25) 55%, transparent 95%);}
-  .grid-2, .contact-grid { grid-template-columns: minmax(0,1fr); }
+  .grid-2, .contact-grid { grid-template-columns: 1fr; }
 
-  /* 👉 Réaffiche le menu */
   nav {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 0.6rem;
   }
 
-  /* Centre le header correctement */
   .header-inner {
     flex-direction: column;
     align-items: center;
@@ -371,49 +393,4 @@ footer {
 
 @media (max-width: 600px) {
   .hero-title { font-size: 1.8rem; }
-}
-/* 🔥 Taille du logo dans le header */
-.header-logo img {
-    width: 85px !important;
-    height: 85px !important;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-/* 🔥 Texte stylé à côté du logo */
-.header-brand {
-    font-family: "Playfair Display", serif;
-    text-align: left;
-    line-height: 1.2;
-}
-
-.header-brand .brand-title {
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: var(--chocolat-fonce);
-    margin: 0;
-}
-
-.header-brand .brand-subtitle {
-    font-size: 0.85rem;
-    letter-spacing: 0.08em;
-    margin: 0;
-    color: rgba(61,44,33,0.8);
-}
-/* --- Texte tagline sous le logo --- */
-.header-tagline {
-    text-align: center;
-    width: 100%;
-    display: block;
-
-    font-family: "Playfair Display", serif; /* Style élégant */
-    font-size: 1.15rem;
-    font-weight: 400;
-    letter-spacing: 0.12em; /* Raffiné */
-    
-    color: #7a5f4d; /* Brun doux assorti au logo */
-    margin-top: 0.3rem;
-    margin-bottom: 0.5rem;
-    opacity: 0.95;
 }
