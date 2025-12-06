@@ -335,8 +335,20 @@ footer {
   .hero-content { max-width: 100%; padding: 1.3rem; }
   .hero-overlay { background: linear-gradient(160deg, rgba(0,0,0,0.6) 0, rgba(0,0,0,0.25) 55%, transparent 95%);}
   .grid-2, .contact-grid { grid-template-columns: minmax(0,1fr); }
-  nav { display:none; }
-  .header-inner { justify-content:center; }
+
+  /* 👉 Réaffiche le menu */
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0.6rem;
+  }
+
+  /* Centre le header correctement */
+  .header-inner {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (max-width: 600px) {
