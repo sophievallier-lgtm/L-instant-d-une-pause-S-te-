@@ -10,33 +10,36 @@
 <link rel="stylesheet" href="assets/css/style.css">
 
 <title>Tarifs – L'instant d'une pause</title>
-<meta name="description" content="Tarifs des massages bien-être, palper-rouler manuel, drainage, massages signature et massage énergétique à Sète.">
+<meta name="description" content="Tarifs des massages bien-être à Sète : massage bien-être, palper-rouler, drainage, signature et énergétique.">
 </head>
+
 <body>
 
-<header class="header-bar">
-  <div class="header-inner">
-    <div class="header-logo">
-      <img src="assets/img/logo.jpg" alt="L'instant d'une pause - logo">
-    </div>
-    <div class="header-text">
-      <p class="header-title">L'instant d'une pause</p>
-      <p class="header-subtitle">Massages &amp; bien-être – Sète</p>
-    </div>
-    <nav>
-      <a class="nav-link" href="index.html">Accueil</a>
-      <a class="nav-link" href="massages.html">Massages</a>
-      <a class="nav-link" href="tarifs.html">Tarifs</a>
-      <a class="nav-link" href="galerie.html">Galerie</a>
-      <a class="nav-link" href="avis.html">Avis clients</a>
-      <a class="nav-link" href="contact.html">Contact</a>
+<!-- HEADER MOBILE IDENTIQUE À L'ACCUEIL -->
+<header>
+    <img src="assets/img/logo.jpg" alt="Logo L'instant d'une pause" style="width:60px; border-radius:50%;">
+
+    <button id="menu-btn"
+        style="font-size:28px; background:none; border:none; position:absolute; right:15px; top:15px;">
+        ☰
+    </button>
+
+    <nav id="menu"
+        style="display:none; flex-direction:column; background:#f6eee5; padding:15px;">
+        <a href="index.html">Accueil</a>
+        <a href="massages.html">Massages</a>
+        <a href="tarifs.html">Tarifs</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="avis.html">Avis</a>
+        <a href="contact.html">Contact</a>
     </nav>
-  </div>
 </header>
 
-<main>
-  <section class="section">
-    <h2>Tarifs</h2>
+<main class="page">
+
+<section class="section">
+    <h2 class="page-title" style="text-align:center;">Tarifs</h2>
+
     <table class="table-tarifs">
       <thead>
         <tr>
@@ -46,56 +49,83 @@
         </tr>
       </thead>
       <tbody>
+
         <tr>
           <td>Palper-rouler manuel</td>
           <td>45 min</td>
           <td>45 €</td>
         </tr>
+
         <tr>
-          <td>Palper-rouler manuel – Cure 4 séances</td>
+          <td>Palper-rouler – Cure 4 séances</td>
           <td>4 × 45 min</td>
           <td>160 €</td>
         </tr>
+
         <tr>
           <td>Drainage manuel bien-être</td>
           <td>45 min</td>
           <td>45 €</td>
         </tr>
+
         <tr>
-          <td>Drainage manuel bien-être – Cure 4 séances</td>
+          <td>Drainage – Cure 4 séances</td>
           <td>4 × 45 min</td>
           <td>160 €</td>
         </tr>
+
+        <tr>
+          <td>Massage bien-être</td>
+          <td>1h</td>
+          <td>45 €</td>
+        </tr>
+
+        <tr>
+          <td>Massage du visage</td>
+          <td>45 min</td>
+          <td>40 €</td>
+        </tr>
+
         <tr>
           <td>Massage signature</td>
           <td>1h30</td>
           <td>65 €</td>
         </tr>
+
         <tr>
           <td>Massage signature</td>
           <td>2h</td>
           <td>85 €</td>
         </tr>
+
         <tr>
           <td>Massage énergétique</td>
           <td>1h30</td>
           <td>65 €</td>
         </tr>
+
       </tbody>
     </table>
-    <p class="note-tarifs">
+
+    <p class="note-tarifs" style="margin-top:1rem; text-align:center;">
       Les massages proposés sont des massages de bien-être, non thérapeutiques et non médicaux.
-      Ils ne remplacent pas un suivi auprès d'un professionnel de santé.
     </p>
-  </section>
+
+</section>
+
 </main>
 
-<footer>
-  <div class="footer-inner">
-    <div>&copy; L'instant d'une pause – Sète.</div>
-    <div>Praticienne en bien-être : massages de détente, sans visée thérapeutique ni médicale. Ne remplace pas l'avis d'un professionnel de santé.</div>
-  </div>
+<footer class="footer">
+  <p>© L'instant d'une pause – Sète</p>
+  <p>Massages bien-être : pratiques de relaxation, sans visée thérapeutique ni médicale.</p>
 </footer>
+
+<script>
+document.getElementById("menu-btn").onclick = function () {
+    const menu = document.getElementById("menu");
+    menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+};
+</script>
 
 </body>
 </html>
