@@ -24,19 +24,16 @@
       <img src="assets/img/logo.jpg" alt="Logo L'instant d'une pause">
     </div>
 
-    <!-- TEXTE À CÔTÉ DU LOGO -->
-    <div class="header-brand">
-      <p class="brand-title">L’instant d’une pause</p>
-      <p class="brand-subtitle">Massages bien-être</p>
+    <!-- TEXTE DU LOGO -->
+    <div class="header-text">
+      <p class="header-title">L'instant d'une pause</p>
+      <p class="header-subtitle">Massages bien-être – Sète</p>
     </div>
 
-    <!-- MENU BURGER MOBILE -->
-    <button id="menu-btn"
-      style="font-size:28px; background:none; border:none; position:absolute; right:15px; top:15px; cursor:pointer;">
-      ☰
-    </button>
+    <!-- MENU HAMBURGER (MOBILE) -->
+    <button id="menu-btn" class="hamburger">☰</button>
 
-    <!-- NAVIGATION -->
+    <!-- MENU -->
     <nav id="menu">
       <a class="nav-link" href="index.html">Accueil</a>
       <a class="nav-link" href="massages.html">Massages</a>
@@ -48,6 +45,13 @@
 
   </div>
 </header>
+
+<script>
+document.getElementById("menu-btn").onclick = function () {
+  const menu = document.getElementById("menu");
+  menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+};
+</script>
 
 <!-- HERO -->
 <section class="hero">
