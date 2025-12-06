@@ -2,18 +2,17 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>L'instant d'une pause – Massages bien-être à Sète</title>
 
-    <!-- Police du site -->
+    <!-- Police -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
 
-    <!-- Style général -->
+    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 
 <header class="header-bar">
@@ -30,7 +29,7 @@
             <p class="brand-subtitle">Massages bien-être – Sète</p>
         </div>
 
-        <!-- MENU HAMBURGER (MOBILE) -->
+        <!-- BOUTON MENU MOBILE -->
         <button id="menu-btn" class="hamburger">☰</button>
 
         <!-- MENU -->
@@ -46,11 +45,11 @@
     </div>
 </header>
 
-<!-- SCRIPT DU MENU MOBILE -->
+<!-- SCRIPT DU MENU -->
 <script>
 document.getElementById("menu-btn").onclick = function () {
   const menu = document.getElementById("menu");
-  menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+  menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
 };
 </script>
 
@@ -59,6 +58,7 @@ document.getElementById("menu-btn").onclick = function () {
   <div class="hero-banner">
     <img src="assets/img/header.jpg" alt="Cabine de massage chaleureuse">
     <div class="hero-overlay"></div>
+
     <div class="hero-content">
       <div class="hero-kicker">Massages bien-être</div>
       <h1 class="hero-title">Une pause rien que pour vous</h1>
@@ -76,21 +76,21 @@ document.getElementById("menu-btn").onclick = function () {
 <main>
   <section class="section">
     <h2>Mon approche</h2>
+
     <div class="carte">
       <p>
         Je suis praticienne en bien-être et je vous accueille dans un cocon chaleureux,
-        entièrement dédié à la détente, au relâchement et à la reconnexion avec vous-même.
+        un espace dédié à la détente, au relâchement et à la reconnexion avec vous-même.
       </p>
 
       <p>
-        Chaque massage est intuitif, adapté à votre énergie du moment et à vos besoins.
-        J’utilise des manœuvres enveloppantes, douces et profondes pour apaiser le corps,
-        relâcher les tensions et offrir une parenthèse de calme intérieur.
+        Chaque massage est intuitif et adapté à vos besoins du moment. J’utilise des manœuvres
+        enveloppantes, douces et profondes pour apaiser le corps et libérer les tensions.
       </p>
 
       <p>
-        Mes massages sont des pratiques de bien-être, non médicaux, non thérapeutiques et non esthétiques.
-        Ils ne remplacent pas un suivi auprès d’un professionnel de santé.
+        Les massages proposés sont non thérapeutiques, non médicaux et ne remplacent pas un suivi
+        auprès d’un professionnel de santé.
       </p>
     </div>
   </section>
@@ -98,6 +98,7 @@ document.getElementById("menu-btn").onclick = function () {
   <!-- RÉSEAUX SOCIAUX -->
   <section class="section">
     <h2>Me suivre</h2>
+
     <div class="carte">
       <div class="reseaux-links">
         <a href="https://www.facebook.com/Linstantdunepause" target="_blank">Facebook</a> •
@@ -111,7 +112,7 @@ document.getElementById("menu-btn").onclick = function () {
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
-    <div>© L'instant d'une pause – Sète.</div>
+    <div>© L'instant d'une pause – Sète</div>
     <div>Massages bien-être : pratiques de relaxation, sans visée thérapeutique ni médicale.</div>
   </div>
 </footer>
