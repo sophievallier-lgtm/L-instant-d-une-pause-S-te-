@@ -354,3 +354,32 @@ footer {
 @media (max-width: 600px) {
   .hero-title { font-size: 1.8rem; }
 }
+/* 🔥 Taille du logo dans le header */
+.header-logo img {
+    width: 85px !important;
+    height: 85px !important;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* 🔥 Texte stylé à côté du logo */
+.header-brand {
+    font-family: "Playfair Display", serif;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.header-brand .brand-title {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--chocolat-fonce);
+    margin: 0;
+}
+
+.header-brand .brand-subtitle {
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    margin: 0;
+    color: rgba(61,44,33,0.8);
+}
