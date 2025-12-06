@@ -72,12 +72,31 @@ img {
   color: var(--chocolat-fonce);
 }
 
-.header-subtitle {
-  margin: 0.1rem 0 0;
-  font-size: 0.9rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: rgba(61,44,33,0.8);
+.header-brand .brand-subtitle {
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    font-family: "Playfair Display", serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+
+    color: #7a5f4d;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+    opacity: 0.95;
+    text-transform: lowercase; /* tout en minuscules */
+}
+.header-brand {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centre le logo + le texte */
+}
+.header-brand .brand-subtitle::first-letter {
+    text-transform: uppercase; /* Pour SÈTE ou début si besoin */
 }
 
 nav {
