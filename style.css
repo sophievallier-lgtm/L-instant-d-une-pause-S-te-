@@ -59,11 +59,10 @@ img {
   flex-shrink: 0;
 }
 
-.header-text {
+.header-brand {
   flex: 1;
   text-align: center;
 }
-
 .header-title {
   margin: 0;
   font-family: "Playfair Display","Times New Roman",serif;
