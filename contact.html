@@ -4,48 +4,48 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Contact – L'instant d'une pause</title>
-<meta name="description" content="Prendre rendez-vous ou poser une question à L'instant d'une pause, massage bien-être à Sète.">
 
+<!-- Police -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
 
-<!-- Chemin CSS corrigé -->
+<!-- CSS -->
 <link rel="stylesheet" href="style.css">
 
+<meta name="description" content="Contact et réservation auprès de L'instant d'une pause, massages bien-être à Sète.">
 </head>
 <body>
 
 <header class="header-bar">
-  <div class="header-inner">
+    <div class="header-inner">
 
-    <!-- LOGO -->
-    <div class="header-logo">
-      <img src="assets/img/logo.jpg" alt="Logo L'instant d'une pause">
+        <!-- Logo -->
+        <div class="header-logo">
+            <img src="logo.jpg" alt="Logo L'instant d'une pause">
+        </div>
+
+        <!-- Texte -->
+        <div class="header-text">
+            <p class="header-title">L'instant d'une pause</p>
+            <p class="header-subtitle">Massages bien-être – Sète</p>
+        </div>
+
+        <!-- Menu mobile -->
+        <button id="menu-btn" class="hamburger">☰</button>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <a class="nav-link" href="index.html">Accueil</a>
+            <a class="nav-link" href="massages.html">Massages</a>
+            <a class="nav-link" href="tarifs.html">Tarifs</a>
+            <a class="nav-link" href="galerie.html">Galerie</a>
+            <a class="nav-link" href="avis.html">Avis clients</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+
     </div>
-
-    <!-- TEXTE DU LOGO -->
-    <div class="header-text">
-      <p class="header-title">L'instant d'une pause</p>
-      <p class="header-subtitle">Massages bien-être – Sète</p>
-    </div>
-
-    <!-- MENU HAMBURGER (MOBILE) -->
-    <button id="menu-btn" class="hamburger">☰</button>
-
-    <!-- MENU -->
-    <nav id="menu">
-      <a class="nav-link" href="index.html">Accueil</a>
-      <a class="nav-link" href="massages.html">Massages</a>
-      <a class="nav-link" href="tarifs.html">Tarifs</a>
-      <a class="nav-link" href="galerie.html">Galerie</a>
-      <a class="nav-link" href="avis.html">Avis clients</a>
-      <a class="nav-link" href="contact.html">Contact</a>
-    </nav>
-
-  </div>
 </header>
 
 <script>
@@ -55,59 +55,51 @@ document.getElementById("menu-btn").onclick = function () {
 };
 </script>
 
-<!-- CONTENU -->
 <main>
-  <section class="section">
-    <h2>Contact &amp; réservation</h2>
+    <section class="section">
+        <h1>Contact & réservation</h1>
 
-    <div class="contact-grid">
-      <div class="carte">
+        <div class="contact-grid">
 
-        <p><strong>Téléphone</strong></p>
-        <p><a href="tel:+33661762121">06 61 76 21 21</a></p>
+            <!-- Carte contact -->
+            <div class="carte">
+                <p><strong>Téléphone</strong></p>
+                <p><a href="tel:+33661762121">06 61 76 21 21</a></p>
 
-        <p><strong>Instagram</strong></p>
-        <p><a href="https://www.instagram.com/linstant.dune.pause" target="_blank" rel="noopener">linstant.dune.pause</a></p>
+                <p><strong>Instagram</strong></p>
+                <p><a href="https://www.instagram.com/linstant.dune.pause" target="_blank">linstant.dune.pause</a></p>
 
-        <p><strong>Facebook</strong></p>
-        <p><a href="https://www.facebook.com/profile.php?id=100089641204790" target="_blank" rel="noopener">L'instant d'une pause</a></p>
+                <p><strong>Facebook</strong></p>
+                <p><a href="https://www.facebook.com/Linstantdunepause" target="_blank">L'instant d'une pause</a></p>
 
-        <p><strong>Google</strong></p>
-        <p><a href="https://g.page/r/Ce7sH7rmDdY7EBM/review" target="_blank" rel="noopener">
-          Page Google L'instant d'une pause</a></p>
+                <p><strong>Google</strong></p>
+                <p><a href="https://g.co/kgs/kVZk9Ab" target="_blank">Page Google</a></p>
 
-        <p style="margin-top:0.8rem;">
-          Pour toute question ou pour réserver, le plus simple est de m'envoyer un message ou de me téléphoner.
-        </p>
+                <p style="margin-top:1rem;">
+                    Pour toute question ou pour réserver, vous pouvez m’appeler ou m’envoyer un message.
+                    Réponse rapide.
+                </p>
+            </div>
 
-      </div>
+            <!-- Carte Google Maps -->
+            <div class="map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.374!2d3.699!3d43.402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b113c7!2sS%C3%A8te"
+                    style="border:0; width:100%; height:100%; min-height:260px;"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
 
-      <div class="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.374!2d3.699!3d43.402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b113c7!2sS%C3%A8te"
-          style="border:0; width:100%; height:100%; min-height:260px;"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-  </section>
+        </div>
+    </section>
 </main>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-inner">
-    <div>&copy; L'instant d'une pause – Sète.</div>
-    <div>Praticienne en bien-être : massages de détente, sans visée thérapeutique ni médicale. Ne remplace pas l'avis d'un professionnel de santé.</div>
+      <div>© L'instant d'une pause – Sète.</div>
+      <div>Massages bien-être : pratiques de relaxation, sans visée thérapeutique ni médicale.</div>
   </div>
 </footer>
-
-<!-- SCRIPT MENU -->
-<script>
-document.getElementById("menu-btn").onclick = function () {
-  const menu = document.getElementById("menu");
-  menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
-};
-</script>
 
 </body>
 </html>
