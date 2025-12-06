@@ -3,93 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galerie photos – L'instant d'une pause</title>
+    <title>Galerie – L'instant d'une pause</title>
 
-    <!-- Google font -->
+    <!-- Police -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
 
-    <!-- Style -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- 🔹 HEADER -->
-    <header class="header-bar">
-        <div class="header-inner">
-            <div class="header-logo">
-                <img src="logo.jpg" alt="Logo L'instant d'une pause">
-            </div>
+<header class="header-bar">
+    <div class="header-inner">
 
-            <div class="header-brand">
-                <h1 class="brand-title">L'instant d'une pause</h1>
-                <p class="brand-subtitle">Massages bien-être – Sète</p>
-            </div>
-
-            <button id="menu-btn" class="menu-btn">☰</button>
-
-            <nav id="menu">
-                <a class="nav-link" href="index.html">Accueil</a>
-                <a class="nav-link" href="massages.html">Massages</a>
-                <a class="nav-link" href="tarifs.html">Tarifs</a>
-                <a class="nav-link" href="galerie.html">Galerie</a>
-                <a class="nav-link" href="avis.html">Avis clients</a>
-                <a class="nav-link" href="contact.html">Contact</a>
-            </nav>
+        <!-- Logo -->
+        <div class="header-logo">
+            <img src="logo.jpg" alt="Logo L'instant d'une pause">
         </div>
-    </header>
 
-    <main>
-        <section class="section">
-            <h2>Galerie photos</h2>
-
-            <p>Découvrez quelques photos de mon espace bien-être à Sète.</p>
-
-            <div class="galerie-grille">
-
-                <!-- Tu peux remplacer les images par tes fichiers (ex: photo1.jpg...) -->
-                <div class="galerie-item">
-                    <img src="galerie1.jpg" alt="Cabine de massage">
-                </div>
-
-                <div class="galerie-item">
-                    <img src="galerie2.jpg" alt="Décoration murale végétale">
-                </div>
-
-                <div class="galerie-item">
-                    <img src="galerie3.jpg" alt="Ambiance relaxation">
-                </div>
-
-                <div class="galerie-item">
-                    <img src="galerie4.jpg" alt="Table de massage">
-                </div>
-
-                <div class="galerie-item">
-                    <img src="galerie5.jpg" alt="Coin détente">
-                </div>
-
-                <div class="galerie-item">
-                    <img src="galerie6.jpg" alt="Cabinet bien-être">
-                </div>
-
-            </div>
-        </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-inner">
-            <p>© L'instant d'une pause – Sète</p>
-            <p>Massages bien-être : pratiques de relaxation, sans visée thérapeutique ni médicale.</p>
+        <!-- Texte -->
+        <div class="header-text">
+            <p class="header-title">L'instant d'une pause</p>
+            <p class="header-subtitle">Massages bien-être – Sète</p>
         </div>
-    </footer>
 
-    <script>
-        const btn = document.getElementById("menu-btn");
-        const menu = document.getElementById("menu");
-        btn.onclick = () => menu.classList.toggle("open");
-    </script>
+        <!-- Menu mobile -->
+        <button id="menu-btn" class="hamburger">☰</button>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <a class="nav-link" href="index.html">Accueil</a>
+            <a class="nav-link" href="massages.html">Massages</a>
+            <a class="nav-link" href="tarifs.html">Tarifs</a>
+            <a class="nav-link" href="galerie.html">Galerie</a>
+            <a class="nav-link" href="avis.html">Avis clients</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+
+    </div>
+</header>
+
+<script>
+document.getElementById("menu-btn").onclick = function () {
+  const menu = document.getElementById("menu");
+  menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+};
+</script>
+
+<main>
+    <section class="section">
+        <h1 class="page-title">Galerie photos</h1>
+
+        <div class="galerie-grille">
+
+            <!-- Photos de ta galerie -->
+            <div class="galerie-item">
+                <img src="galerie-1.jpg" alt="Cabine de massage">
+            </div>
+
+            <div class="galerie-item">
+                <img src="galerie-2.jpg" alt="Décoration détente">
+            </div>
+
+            <div class="galerie-item">
+                <img src="galerie-3.jpg" alt="Salle de massage">
+            </div>
+
+            <div class="galerie-item">
+                <img src="galerie-4.jpg" alt="Ambiance bien-être">
+            </div>
+
+            <div class="galerie-item">
+                <img src="galerie-5.jpg" alt="Espace relaxation">
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-inner">
+        <div>© L'instant d'une pause – Sète</div>
+        <div>Massages bien-être : pratiques de relaxation, sans visée thérapeutique ni médicale.</div>
+    </div>
+</footer>
 
 </body>
 </html>
