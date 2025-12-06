@@ -4,77 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L'instant d'une pause – Massages bien-être à Sète</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Police du site -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+    <!-- Style général -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-<header>
-    <img src="logo.jpg" alt="Logo L'instant d'une pause" style="width:60px; border-radius:50%;">
+<header class="header-bar">
+  <div class="header-inner">
 
+    <!-- LOGO -->
+    <div class="header-logo">
+      <img src="assets/img/logo.jpg" alt="Logo L'instant d'une pause">
+    </div>
+
+    <!-- TEXTE À CÔTÉ DU LOGO -->
+    <div class="header-brand">
+      <p class="brand-title">L’instant d’une pause</p>
+      <p class="brand-subtitle">Massages bien-être</p>
+    </div>
+
+    <!-- MENU BURGER MOBILE -->
     <button id="menu-btn"
-        style="font-size:28px; background:none; border:none; position:absolute; right:15px; top:15px;">
-        ☰
+      style="font-size:28px; background:none; border:none; position:absolute; right:15px; top:15px; cursor:pointer;">
+      ☰
     </button>
 
-    <nav id="menu"
-        style="display:none; flex-direction:column; background:#f6eee5; padding:15px;">
-        <a href="index.html">Accueil</a>
-        <a href="massages.html">Massages</a>
-        <a href="tarifs.html">Tarifs</a>
-        <a href="galerie.html">Galerie</a>
-        <a href="avis.html">Avis</a>
-        <a href="contact.html">Contact</a>
+    <!-- NAVIGATION -->
+    <nav id="menu">
+      <a class="nav-link" href="index.html">Accueil</a>
+      <a class="nav-link" href="massages.html">Massages</a>
+      <a class="nav-link" href="tarifs.html">Tarifs</a>
+      <a class="nav-link" href="galerie.html">Galerie</a>
+      <a class="nav-link" href="avis.html">Avis clients</a>
+      <a class="nav-link" href="contact.html">Contact</a>
     </nav>
+
+  </div>
 </header>
 
-<!-- HERO IMAGE -->
-<section class="hero-image">
-    <img src="header.jpg" alt="Cabine de massage chaleureuse">
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-banner">
+    <img src="assets/img/header.jpg" alt="Cabine de massage chaleureuse">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-kicker">Massages bien-être</div>
+      <h1 class="hero-title">Une pause rien que pour vous</h1>
+      <p class="hero-subtitle">Détente, relâchement et reconnexion à soi</p>
+
+      <div class="hero-actions">
+        <a href="massages.html" class="btn btn-principal">Découvrir les massages</a>
+        <a href="contact.html" class="btn btn-secondaire">Prendre rendez-vous</a>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- DESCRIPTION -->
-<main class="page">
+<!-- CONTENU -->
+<main>
+  <section class="section">
+    <h2>Mon approche</h2>
+    <div class="carte">
+      <p>
+        Je suis praticienne en bien-être et je vous accueille dans un cocon chaleureux, un espace 
+        entièrement dédié à la détente, au relâchement et à la reconnexion avec vous-même.
+      </p>
 
-    <div class="accueil-texte">
-        <h2 class="page-title" style="text-align:center;">Mon approche</h2>
+      <p>
+        Chaque massage est intuitif, adapté à votre énergie du moment et à vos besoins. 
+        J’utilise des manœuvres enveloppantes, douces et profondes pour apaiser le corps,
+        relâcher les tensions et offrir une parenthèse de calme intérieur.
+      </p>
 
-        <p>
-            Je suis praticienne en bien-être et je vous accueille dans un cocon chaleureux, un espace 
-            entièrement dédié à la détente, au relâchement et à la reconnexion avec vous-même.
-        </p>
-
-        <p>
-            Chaque massage est intuitif, adapté à votre énergie du moment et à vos besoins. 
-            J’utilise des manœuvres enveloppantes, douces et profondes pour apaiser le corps, relâcher 
-            les tensions et offrir une parenthèse de calme intérieur.
-        </p>
-
-        <p>
-            Mes massages sont des pratiques de détente et de bien-être. Ils ne sont ni médicaux, ni 
-            thérapeutiques, ni esthétiques, et ne remplacent pas un suivi auprès d’un professionnel de santé.
-        </p>
+      <p>
+        Mes massages sont des pratiques de détente et de bien-être. Ils ne sont ni médicaux, 
+        ni thérapeutiques, ni esthétiques, et ne remplacent pas un suivi auprès d’un professionnel de santé.
+      </p>
     </div>
+  </section>
 
-    <!-- RÉSEAUX SOCIAUX -->
-    <div class="reseaux">
-        <h2 class="page-title" style="text-align:center;">Me suivre</h2>
-
-        <div class="reseaux-links">
-            <a href="https://www.facebook.com/Linstantdunepause" target="_blank">Facebook</a>
-            <a href="https://www.instagram.com/linstant.dune.pause" target="_blank">Instagram</a>
-            <a href="https://g.co/kgs/kVZk9Ab" target="_blank">Google</a>
-        </div>
+  <!-- RÉSEAUX SOCIAUX -->
+  <section class="section">
+    <h2>Me suivre</h2>
+    <div class="carte">
+      <div class="reseaux-links">
+        <a href="https://www.facebook.com/Linstantdunepause" target="_blank">Facebook</a> •
+        <a href="https://www.instagram.com/linstant.dune.pause" target="_blank">Instagram</a> •
+        <a href="https://g.co/kgs/kVZk9Ab" target="_blank">Google</a>
+      </div>
     </div>
-
+  </section>
 </main>
 
 <!-- FOOTER -->
-<footer class="footer">
-    <p>© L'instant d'une pause – Sète</p>
-    <p>Massages bien-être : pratiques de relaxation, sans visée thérapeutique ni médicale.</p>
+<footer>
+  <div class="footer-inner">
+    <div>© L'instant d'une pause – Sète.</div>
+    <div>Massages bien-être : pratiques de relaxation, sans visée thérapeutique ni médicale.</div>
+  </div>
 </footer>
 
+<!-- SCRIPT MENU -->
 <script>
 document.getElementById("menu-btn").onclick = function () {
     const menu = document.getElementById("menu");
