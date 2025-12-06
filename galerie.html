@@ -1,106 +1,95 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie photos – L'instant d'une pause</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
-<title>Galerie – L'instant d'une pause</title>
-<meta name="description" content="Découvrez l'ambiance de la cabine de massage et quelques instants de soin à L'instant d'une pause, à Sète.">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
-
-<!-- Chemin CSS corrigé -->
-<link rel="stylesheet" href="style.css">
-
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="header-bar">
-  <div class="header-inner">
+    <!-- 🔹 HEADER -->
+    <header class="header-bar">
+        <div class="header-inner">
+            <div class="header-logo">
+                <img src="logo.jpg" alt="Logo L'instant d'une pause">
+            </div>
 
-    <!-- LOGO -->
-    <div class="header-logo">
-      <img src="assets/img/logo.jpg" alt="Logo L'instant d'une pause">
-    </div>
+            <div class="header-brand">
+                <h1 class="brand-title">L'instant d'une pause</h1>
+                <p class="brand-subtitle">Massages bien-être – Sète</p>
+            </div>
 
-    <!-- TEXTE DU LOGO -->
-    <div class="header-text">
-      <p class="header-title">L'instant d'une pause</p>
-      <p class="header-subtitle">Massages bien-être – Sète</p>
-    </div>
+            <button id="menu-btn" class="menu-btn">☰</button>
 
-    <!-- MENU HAMBURGER (MOBILE) -->
-    <button id="menu-btn" class="hamburger">☰</button>
+            <nav id="menu">
+                <a class="nav-link" href="index.html">Accueil</a>
+                <a class="nav-link" href="massages.html">Massages</a>
+                <a class="nav-link" href="tarifs.html">Tarifs</a>
+                <a class="nav-link" href="galerie.html">Galerie</a>
+                <a class="nav-link" href="avis.html">Avis clients</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-    <!-- MENU -->
-    <nav id="menu">
-      <a class="nav-link" href="index.html">Accueil</a>
-      <a class="nav-link" href="massages.html">Massages</a>
-      <a class="nav-link" href="tarifs.html">Tarifs</a>
-      <a class="nav-link" href="galerie.html">Galerie</a>
-      <a class="nav-link" href="avis.html">Avis clients</a>
-      <a class="nav-link" href="contact.html">Contact</a>
-    </nav>
+    <main>
+        <section class="section">
+            <h2>Galerie photos</h2>
 
-  </div>
-</header>
+            <p>Découvrez quelques photos de mon espace bien-être à Sète.</p>
 
-<script>
-document.getElementById("menu-btn").onclick = function () {
-  const menu = document.getElementById("menu");
-  menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-};
-</script>
+            <div class="galerie-grille">
 
-<!-- CONTENU -->
-<main>
-  <section class="section">
-    <h2>Galerie photos</h2>
+                <!-- Tu peux remplacer les images par tes fichiers (ex: photo1.jpg...) -->
+                <div class="galerie-item">
+                    <img src="galerie1.jpg" alt="Cabine de massage">
+                </div>
 
-    <div class="galerie-grille">
+                <div class="galerie-item">
+                    <img src="galerie2.jpg" alt="Décoration murale végétale">
+                </div>
 
-      <div class="galerie-item">
-        <img src="galerie-1.jpg" alt="Massage bien-être">
-      </div>
+                <div class="galerie-item">
+                    <img src="galerie3.jpg" alt="Ambiance relaxation">
+                </div>
 
-      <div class="galerie-item">
-        <img src="galerie-2.jpg" alt="Détail cabine de massage">
-      </div>
+                <div class="galerie-item">
+                    <img src="galerie4.jpg" alt="Table de massage">
+                </div>
 
-      <div class="galerie-item">
-        <img src="galerie-3.jpg" alt="Ambiance chaleureuse">
-      </div>
+                <div class="galerie-item">
+                    <img src="galerie5.jpg" alt="Coin détente">
+                </div>
 
-      <div class="galerie-item">
-        <img src="galerie-4.jpg" alt="Table de massage prête pour une séance">
-      </div>
+                <div class="galerie-item">
+                    <img src="galerie6.jpg" alt="Cabinet bien-être">
+                </div>
 
-      <div class="galerie-item">
-        <img src="galerie-5.jpg" alt="Décor nature & lumière douce">
-      </div>
+            </div>
+        </section>
+    </main>
 
-    </div>
-  </section>
-</main>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <p>© L'instant d'une pause – Sète</p>
+            <p>Massages bien-être : pratiques de relaxation, sans visée thérapeutique ni médicale.</p>
+        </div>
+    </footer>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-inner">
-    <div>&copy; L'instant d'une pause – Sète.</div>
-    <div>Praticienne en bien-être : massages de détente, sans visée thérapeutique ni médicale. Ne remplace pas l'avis d'un professionnel de santé.</div>
-  </div>
-</footer>
-
-<!-- SCRIPT MENU -->
-<script>
-document.getElementById("menu-btn").onclick = function () {
-  const menu = document.getElementById("menu");
-  menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
-};
-</script>
+    <script>
+        const btn = document.getElementById("menu-btn");
+        const menu = document.getElementById("menu");
+        btn.onclick = () => menu.classList.toggle("open");
+    </script>
 
 </body>
 </html>
