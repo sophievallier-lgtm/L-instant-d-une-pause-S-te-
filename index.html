@@ -5,56 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L'instant d'une pause – Massages bien-être à Sète</title>
 
-    <!-- Police du site -->
+    <!-- Police Playfair -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
 
     <!-- Style général -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HEADER IDENTIQUE SUR TOUTES LES PAGES -->
 <header class="header-bar">
-  <div class="header-inner">
+    <div class="header-inner">
+        <!-- Logo -->
+        <div class="header-logo">
+            <img src="logo.jpg" alt="Logo L'instant d'une pause">
+        </div>
 
-    <div class="header-logo">
-      <img src="assets/img/logo.jpg" alt="Logo L'instant d'une pause">
+        <!-- Texte -->
+        <div class="header-text">
+            <p class="header-title">L'instant d'une pause</p>
+            <p class="header-subtitle">Massages bien-être – Sète</p>
+        </div>
+
+        <!-- Menu mobile -->
+        <button id="menu-btn" class="hamburger">☰</button>
+
+        <!-- Navigation -->
+        <nav id="menu">
+            <a class="nav-link" href="index.html">Accueil</a>
+            <a class="nav-link" href="massages.html">Massages</a>
+            <a class="nav-link" href="tarifs.html">Tarifs</a>
+            <a class="nav-link" href="galerie.html">Galerie</a>
+            <a class="nav-link" href="avis.html">Avis clients</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
     </div>
-
-    <div class="header-brand">
-      <p class="brand-title">L'instant d'une pause</p>
-      <p class="brand-subtitle">Massages bien-être – Sète</p>
-    </div>
-
-    <button id="menu-btn" class="hamburger">☰</button>
-
-    <nav id="menu">
-      <a class="nav-link" href="index.html">Accueil</a>
-      <a class="nav-link" href="massages.html">Massages</a>
-      <a class="nav-link" href="tarifs.html">Tarifs</a>
-      <a class="nav-link" href="galerie.html">Galerie</a>
-      <a class="nav-link" href="avis.html">Avis clients</a>
-      <a class="nav-link" href="contact.html">Contact</a>
-    </nav>
-
-  </div>
 </header>
 
 <script>
 document.getElementById("menu-btn").onclick = function () {
   const menu = document.getElementById("menu");
-  menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+  menu.style.display = menu.style.display === "flex" ? "none" : "flex";
 };
 </script>
-<!-- FIN HEADER -->
 
-<!-- HERO -->
+<!-- HERO SECTION -->
 <section class="hero">
     <div class="hero-banner">
-        <img src="assets/img/header.jpg" alt="Cabine de massage chaleureuse">
+        <img src="header.jpg" alt="Cabine de massage chaleureuse">
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <div class="hero-kicker">Massages bien-être</div>
@@ -74,11 +74,14 @@ document.getElementById("menu-btn").onclick = function () {
     <section class="section">
         <h2>Mon approche</h2>
         <div class="carte">
-            <p>Je suis praticienne en bien-être et je vous accueille dans un cocon chaleureux, entièrement dédié à la détente, au relâchement et à la reconnexion avec vous-même.</p>
+            <p>Je suis praticienne en bien-être et je vous accueille dans un cocon chaleureux, un espace 
+            dédié à la détente, au relâchement et à la reconnexion avec vous-même.</p>
 
-            <p>Chaque massage est intuitif, adapté à votre énergie du moment et à vos besoins. J’utilise des manœuvres enveloppantes, douces et profondes pour apaiser le corps et offrir une parenthèse de calme intérieur.</p>
+            <p>Chaque massage est intuitif, adapté à votre énergie du moment et à vos besoins. 
+            Les manœuvres enveloppantes, douces et profondes invitent au lâcher-prise et ramènent 
+            calme et sérénité.</p>
 
-            <p>Mes massages sont des pratiques de détente et de bien-être. Ils ne sont ni médicaux, ni thérapeutiques, ni esthétiques, et ne remplacent pas un suivi auprès d’un professionnel de santé.</p>
+            <p>Mes massages sont des pratiques de détente, non médicaux, non thérapeutiques et non esthétiques.</p>
         </div>
     </section>
 
@@ -96,10 +99,10 @@ document.getElementById("menu-btn").onclick = function () {
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-inner">
-    <div>© L'instant d'une pause – Sète.</div>
-    <div>Massages bien-être : pratiques de relaxation, sans visée thérapeutique ni médicale.</div>
-  </div>
+    <div class="footer-inner">
+        <div>© L'instant d'une pause – Sète</div>
+        <div>Massages bien-être : pratiques de relaxation, sans visée thérapeutique ni médicale.</div>
+    </div>
 </footer>
 
 </body>
