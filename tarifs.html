@@ -15,25 +15,38 @@
 
 <body>
 
-<!-- HEADER MOBILE IDENTIQUE À L'ACCUEIL -->
-<header>
-    <img src="assets/img/logo.jpg" alt="Logo L'instant d'une pause" style="width:60px; border-radius:50%;">
+<header class="header-bar">
+  <div class="header-inner">
 
-    <button id="menu-btn"
-        style="font-size:28px; background:none; border:none; position:absolute; right:15px; top:15px;">
-        ☰
-    </button>
+    <div class="header-logo">
+      <img src="assets/img/logo.jpg" alt="Logo L'instant d'une pause">
+    </div>
 
-    <nav id="menu"
-        style="display:none; flex-direction:column; background:#f6eee5; padding:15px;">
-        <a href="index.html">Accueil</a>
-        <a href="massages.html">Massages</a>
-        <a href="tarifs.html">Tarifs</a>
-        <a href="galerie.html">Galerie</a>
-        <a href="avis.html">Avis</a>
-        <a href="contact.html">Contact</a>
+    <div class="header-text">
+      <p class="header-title">L'instant d'une pause</p>
+      <p class="header-subtitle">Massages bien-être – Sète</p>
+    </div>
+
+    <button id="menu-btn" class="hamburger">☰</button>
+
+    <nav id="menu">
+      <a class="nav-link" href="index.html">Accueil</a>
+      <a class="nav-link" href="massages.html">Massages</a>
+      <a class="nav-link" href="tarifs.html">Tarifs</a>
+      <a class="nav-link" href="galerie.html">Galerie</a>
+      <a class="nav-link" href="avis.html">Avis clients</a>
+      <a class="nav-link" href="contact.html">Contact</a>
     </nav>
+
+  </div>
 </header>
+
+<script>
+document.getElementById("menu-btn").onclick = function () {
+  const menu = document.getElementById("menu");
+  menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+};
+</script>
 
 <main class="page">
 
