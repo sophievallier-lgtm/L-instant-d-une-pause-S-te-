@@ -396,3 +396,10 @@ footer {
 @media (max-width: 600px) {
   .hero-title { font-size: 1.8rem; }
 }
+.header-lotus {
+  width: 70px;
+  height: auto;
+  display: block;
+  margin: 0 auto 0.5rem;
+  fill: #7a5f4d !important;
+}
