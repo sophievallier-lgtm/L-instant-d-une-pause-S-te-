@@ -400,6 +400,6 @@ footer {
   width: 70px;
   height: auto;
   display: block;
-  margin: 0 auto 0.5rem;
-  fill: #7a5f4d !important;
+  margin: 0 auto 0.4rem;
+  fill: #7a5f4d !important; /* même couleur que ton texte */
 }
