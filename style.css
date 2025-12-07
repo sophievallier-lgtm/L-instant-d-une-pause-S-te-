@@ -54,20 +54,21 @@ img {
 }
 
 /* Logo */
+/* Logo */
 .header-logo {
-    width: auto;
-    height: auto;
-    border-radius: 0; /* plus de cercle */
-    overflow: visible;
-    box-shadow: none; /* optionnel : enlève l'ombre du cercle */
-    flex-shrink: 0;
+    width: 100%;
+    height: 120px; /* tu peux ajuster 80px / 100px / 120px */
+    background-color: #8C6239; /* Marron du modèle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 .header-logo img {
-    width: 100%;
-    max-width: 350px; /* ajustable : augmente ou diminue à ton goût */
-    height: auto;
-    object-fit: contain; /* garde la bannière entière */
+    height: 100%;
+    width: auto;
+    object-fit: contain;
 }
 /* Bloc central : logo + texte */
 .header-brand {
