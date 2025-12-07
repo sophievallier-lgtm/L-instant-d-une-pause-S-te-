@@ -55,22 +55,7 @@ img {
 
 /* Logo */
 /* Logo / Bannière */
-.header-logo {
-    width: 100%;
-    height: 90px; /* Hauteur plus fine — modifiable : 70 / 80 / 90 / 100 */
-    background-color: #a67c52; /* Marron proche de ton modèle */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
 
-/* Image du logo dans la bannière */
-.header-logo img {
-    height: 85%;   /* Laisse une marge pour respirer */
-    width: auto;
-    object-fit: contain;
-}
 /* Bloc central : logo + texte */
 .header-brand {
   flex: 1;
