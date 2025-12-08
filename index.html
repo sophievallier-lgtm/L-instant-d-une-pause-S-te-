@@ -19,25 +19,25 @@
 <header class="header-bar">
     <div class="header-inner">
 
-        <!-- BLOC CENTRÉ : Lotus + textes -->
+        <!-- BLOC CENTRÉ : lotus + textes -->
         <div class="header-brand">
 
-            <!-- LOTUS SVG (remplace l'ancien logo) -->
-<svg class="header-lotus" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-  <path d="M256 64c-32 40-56 96-56 152 0 56 24 112 56 144 32-32 56-88 56-144 0-56-24-112-56-152z"/>
-  <path d="M160 256c24-8 48-28 62-52 12-20 17-44 13-68-4-24-14-44-28-56-14-12-31-16-48-12-17 4-32 16-42 34-10 18-14 40-12 60 3 28 16 56 37 82z"/>
-  <path d="M352 256c-24-8-48-28-62-52-12-20-17-44-13-68 4-24 14-44 28-56 14-12 31-16 48-12 17 4 32 16 42 34 10 18 14 40 12 60-3 28-16 56-37 82z"/>
-  <path d="M128 320c-16-12-32-32-40-52-10 14-16 34-14 52 2 18 12 34 26 42 14 8 32 10 48 4-6-14-12-28-20-46z"/>
-  <path d="M384 320c16-12 32-32 40-52 10 14 16 34 14 52-2 18-12 34-26 42-14 8-32 10-48 4 6-14 12-28 20-46z"/>
-  <path d="M176 368c-12-10-22-22-28-36-10 12-16 28-14 44 2 16 10 30 22 38 12 8 28 10 42 4-4-14-10-28-16-50z"/>
-  <path d="M336 368c12-10 22-22 28-36 10 12 16 28 14 44-2 16-10 30-22 38-12 8-28 10-42 4 4-14 10-28 16-50z"/>
-</svg> 
+            <!-- LOTUS SVG -->
+            <svg class="header-lotus" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <path d="M256 64c-32 40-56 96-56 152 0 56 24 112 56 144 32-32 56-88 56-144 0-56-24-112-56-152z"/>
+              <path d="M160 256c24-8 48-28 62-52 12-20 17-44 13-68-4-24-14-44-28-56-14-12-31-16-48-12-17 4-32 16-42 34-10 18-14 40-12 60 3 28 16 56 37 82z"/>
+              <path d="M352 256c-24-8-48-28-62-52-12-20-17-44-13-68 4-24 14-44 28-56 14-12 31-16 48-12 17 4 32 16 42 34 10 18 14 40 12 60-3 28-16 56-37 82z"/>
+              <path d="M128 320c-16-12-32-32-40-52-10 14-16 34-14 52 2 18 12 34 26 42 14 8 32 10 48 4-6-14-12-28-20-46z"/>
+              <path d="M384 320c16-12 32-32 40-52 10 14 16 34 14 52-2 18-12 34-26 42-14 8-32 10-48 4 6-14 12-28 20-46z"/>
+              <path d="M176 368c-12-10-22-22-28-36-10 12-16 28-14 44 2 16 10 30 22 38 12 8 28 10 42 4-4-14-10-28-16-50z"/>
+              <path d="M336 368c12-10 22-22 28-36 10 12 16 28 14 44-2 16-10 30-22 38-12 8-28 10-42 4 4-14 10-28 16-50z"/>
+            </svg>
+
             <!-- TITRE PRINCIPAL -->
             <h1 class="header-title">L’INSTANT D’UNE PAUSE</h1>
 
             <!-- SOUS-TITRE -->
             <span class="brand-subtitle">Massages bien-être – Sète</span>
-
         </div>
 
         <!-- Menu -->
@@ -58,55 +58,61 @@
 <script>
 document.getElementById("menu-btn").onclick = function () {
   const menu = document.getElementById("menu");
-  menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+  menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
 };
 </script>
 
-<!-- HERO SECTION -->
-<section class="hero">
-    <div class="hero-banner">
-        <img src="header.jpg" alt="Cabinet de massage – L'instant d'une pause">
-        <div class="hero-overlay">
-            <div class="hero-content">
+<main>
 
-                <h1 class="hero-title">Une pause qui vous ressemble</h1>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-banner">
+            <img src="header.jpg" alt="Cabinet de massage – L'instant d'une pause">
+            <div class="hero-overlay">
+                <div class="hero-content">
 
-                <p class="hero-subtitle">
-                    Pour une peau plus lisse, un corps délesté des tensions  
-                    et un esprit profondément apaisé.
-                </p>
+                    <h1 class="hero-title">Une pause qui vous ressemble</h1>
 
-                <div class="hero-actions">
-                    <a href="massages.html" class="btn-primary">Découvrir les massages</a>
-                    <a href="contact.html" class="btn-secondary">Prendre rendez-vous</a>
+                    <p class="hero-subtitle">
+                        Pour une peau plus lisse, un corps délesté des tensions  
+                        et un esprit profondément apaisé.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="massages.html" class="btn btn-principal">Découvrir les massages</a>
+                        <a href="contact.html" class="btn btn-secondaire">Prendre rendez-vous</a>
+                    </div>
+
                 </div>
-
-            </div> <!-- ferme hero-content -->
-        </div> <!-- ferme hero-overlay -->
-    </div> <!-- ferme hero-banner -->
-</section>
-
-<section class="section">
-    <p>Je suis praticienne en bien-être et je vous accueille dans un cocon chaleureux, un espace 
-    dédié à la détente, au relâchement et à la reconnexion avec vous-même.</p>
-
-    <p>Chaque massage est intuitif, adapté à votre énergie du moment et à vos besoins. 
-    Les manœuvres enveloppantes, douces et profondes invitent au lâcher-prise et ramènent 
-    calme et sérénité.</p>
-
-    <p>Mes massages sont des pratiques de détente, non médicaux, non thérapeutiques et non esthétiques.</p>
-</section>
-
-<section class="section">
-    <h2>Me suivre</h2>
-    <div class="carte">
-        <div class="reseaux-links">
-            <a href="https://www.facebook.com/Linstantdunepause" target="_blank">Facebook</a> •
-            <a href="https://www.instagram.com/linstant.dune.pause" target="_blank">Instagram</a> •
-            <a href="https://g.co/kgs/kVZk9Ab" target="_blank">Google</a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- TEXTE D’ACCROCHE -->
+    <section class="section">
+        <p>Je suis praticienne en bien-être et je vous accueille dans un cocon chaleureux, un espace 
+        dédié à la détente, au relâchement et à la reconnexion avec vous-même.</p>
+
+        <p>Chaque massage est intuitif, adapté à votre énergie du moment et à vos besoins. 
+        Les manœuvres enveloppantes, douces et profondes invitent au lâcher-prise et ramènent 
+        calme et sérénité.</p>
+
+        <p>Mes massages sont des pratiques de détente, non médicaux, non thérapeutiques et non esthétiques.</p>
+    </section>
+
+    <!-- RÉSEAUX -->
+    <section class="section">
+        <h2>Me suivre</h2>
+        <div class="carte">
+            <div class="reseaux-links">
+                <a href="https://www.facebook.com/Linstantdunepause" target="_blank">Facebook</a> •
+                <a href="https://www.instagram.com/linstant.dune.pause" target="_blank">Instagram</a> •
+                <a href="https://g.co/kgs/kVZk9Ab" target="_blank">Google</a>
+            </div>
+        </div>
+    </section>
+
+</main>
 
 <!-- FOOTER -->
 <footer>
