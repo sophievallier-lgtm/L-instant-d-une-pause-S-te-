@@ -63,7 +63,29 @@ img {
   font-family: "Playfair Display", serif;
   line-height: 1.2;
 }
+/* LOGO À GAUCHE DU TEXTE */
+.logo-header {
+    width: 55px;
+    height: auto;
+    margin-right: 12px;
+}
 
+/* Conteneur logo + textes côte à côte */
+.header-brand {
+    flex: 1;
+    display: flex;
+    flex-direction: row; /* très important : horizontal */
+    align-items: center;
+    gap: 12px;
+    text-align: left;
+}
+
+/* Bloc texte du logo */
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
 /* Lotus */
 .header-lotus {
   width: 70px;      /* taille moyenne */
