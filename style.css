@@ -317,8 +317,8 @@ footer {
   }
 }
 .top-lotus {
-    width: 55px;
+    width: 60px;   /* taille du logo */
     height: auto;
-    fill: #7a5f4d; /* Couleur chocolat */
-    margin-right: auto;
+    display: block;
+    margin-right: auto; /* pour le placer à gauche */
 }
