@@ -316,3 +316,9 @@ footer {
     font-size: 1.8rem;
   }
 }
+.top-lotus {
+    width: 55px;
+    height: auto;
+    fill: #7a5f4d; /* Couleur chocolat */
+    margin-right: auto;
+}
