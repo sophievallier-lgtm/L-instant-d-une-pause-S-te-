@@ -339,8 +339,7 @@ footer {
   }
 }
 .top-lotus {
-    width: 60px;   /* taille du logo */
+    width: 95px;      /* agrandit le logo */
     height: auto;
     display: block;
-    margin-right: auto; /* pour le placer à gauche */
 }
