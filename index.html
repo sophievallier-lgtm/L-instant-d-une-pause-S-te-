@@ -19,16 +19,15 @@
 <header class="header-bar">
     <div class="header-inner">
 
-        <!-- LOGO LOTUS -->
-      <svg class="top-lotus" viewBox="0 0 640 400" xmlns="http://www.w3.org/2000/svg">
-  <g fill="none" stroke="#7a5f4d" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M320 30c-40 40-70 110-70 175s30 135 70 175c40-40 70-110 70-175s-30-135-70-175z"/>
-    <path d="M190 235c30-10 60-35 78-67 15-25 22-55 17-85-5-30-20-55-38-70-18-15-40-20-60-15-20 5-40 20-52 40-12 20-18 50-15 80 4 35 20 75 55 115z"/>
-    <path d="M450 235c-30-10-60-35-78-67-15-25-22-55-17-85 5-30 20-55 38-70 18-15 40-20 60-15 20 5 40 20 52 40 12 20 18 50 15 80-4 35-20 75-55 115z"/>
-    <path d="M150 280c-20-12-40-35-50-60-10 15-20 45-15 70 5 25 20 45 40 55 20 10 45 12 65 5-7-20-15-45-25-70z"/>
-    <path d="M490 280c20-12 40-35 50-60 10 15 20 45 15 70-5 25-20 45-40 55-20 10-45 12-65 5 7-20 15-45 25-70z"/>
-  </g>
-</svg>
+        <!-- LOGO + TEXTE -->
+        <div class="header-brand">
+            <img src="Logo.png.png" alt="Logo L'instant d'une pause" class="logo-header">
+
+            <div class="brand-text">
+                <h1 class="header-title">L’INSTANT D’UNE PAUSE</h1>
+                <span class="brand-subtitle">Massages bien-être – Sète</span>
+            </div>
+        </div>
 
         <!-- MENU MOBILE -->
         <button id="menu-btn" class="hamburger">☰</button>
@@ -44,7 +43,6 @@
 
     </div>
 </header>
-
 <script>
 document.getElementById("menu-btn").onclick = function () {
   const menu = document.getElementById("menu");
