@@ -339,7 +339,12 @@ footer {
   }
 }
 .top-lotus {
-    width: 95px;      /* agrandit le logo */
+    width: 140px;          /* agrandit le logo */
     height: auto;
     display: block;
+
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
 }
