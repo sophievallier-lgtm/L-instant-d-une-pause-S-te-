@@ -53,51 +53,6 @@ img {
   gap: 0.9rem;
 }
 
-/* Bloc central : lotus + textes */
-.header-brand {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  font-family: "Playfair Display", serif;
-  line-height: 1.2;
-}
-/* LOGO À GAUCHE DU TEXTE */
-.logo-header {
-    width: 150px;          /* ← AUGMENTE ICI si tu veux (140px, 160px…) */
-    height: auto;
-    display: block;
-    background: transparent;
-    border: none;
-    box-shadow: none;
-}
-
-/* Conteneur logo + textes côte à côte */
-.header-brand {
-    flex: 1;
-    display: flex;
-    flex-direction: row; /* très important : horizontal */
-    align-items: center;
-    gap: 12px;
-    text-align: left;
-}
-
-/* Bloc texte du logo */
-.brand-text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.1;
-}
-/* Lotus */
-.header-lotus {
-  width: 70px;      /* taille moyenne */
-  height: auto;
-  display: block;
-  margin: 0.2rem auto 0.5rem;
-  fill: #7a5f4d;    /* marron */
-}
-
 /* TITRE PRINCIPAL */
 .header-title {
   margin: 0;
@@ -341,13 +296,4 @@ footer {
     font-size: 1.8rem;
   }
 }
-.top-lotus {
-    width: 140px;          /* agrandit le logo */
-    height: auto;
-    display: block;
 
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    padding: 0 !important;
-}
