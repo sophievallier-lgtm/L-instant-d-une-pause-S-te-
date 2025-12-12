@@ -314,7 +314,18 @@ footer {
   display: flex;
   flex-direction: column;
 }
+/* Bouton menu hamburger */
+.hamburger {
+  display: none; /* visible seulement en mobile */
+  background: none;
+  border: none;
+  cursor: pointer;
 
+  font-family: "Playfair Display","Times New Roman",serif;
+  font-size: 2rem;
+  line-height: 1;
+  color: #7a5f4d; /* même couleur que le titre */
+}
 /* Responsive mobile */
 @media (max-width: 840px) {
   .header-brand {
@@ -327,4 +338,6 @@ footer {
     width: 56px;
   }
 }
-
+.hamburger {
+  display: block;
+}
