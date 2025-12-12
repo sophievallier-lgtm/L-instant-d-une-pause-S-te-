@@ -336,14 +336,4 @@ footer {
     width: 56px;
   }
 }
-/* Correction largeur texte mobile */
-@media (max-width: 840px) {
-  .section {
-    max-width: 100%;
-  }
 
-  .section p {
-    max-width: 100%;
-    text-align: left;
-  }
-}
