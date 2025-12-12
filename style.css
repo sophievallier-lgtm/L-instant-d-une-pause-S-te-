@@ -296,4 +296,38 @@ footer {
     font-size: 1.8rem;
   }
 }
+/* ============================= */
+/*          LOGO HEADER          */
+/* ============================= */
 
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-header {
+  width: 64px;          /* taille du logo */
+  height: auto;
+  display: block;
+  background: transparent;
+}
+
+/* Texte à côté du logo */
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive mobile */
+@media (max-width: 840px) {
+  .header-brand {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.4rem;
+  }
+
+  .logo-header {
+    width: 56px;
+  }
+}
