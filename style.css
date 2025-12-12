@@ -65,9 +65,12 @@ img {
 }
 /* LOGO À GAUCHE DU TEXTE */
 .logo-header {
-    width: 55px;
+    width: 150px;          /* ← AUGMENTE ICI si tu veux (140px, 160px…) */
     height: auto;
-    margin-right: 12px;
+    display: block;
+    background: transparent;
+    border: none;
+    box-shadow: none;
 }
 
 /* Conteneur logo + textes côte à côte */
