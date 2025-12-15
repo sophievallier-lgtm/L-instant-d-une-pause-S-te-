@@ -17,38 +17,37 @@
 <body>
 
 <header class="header-bar">
-    <div class="header-inner">
+  <div class="header-inner">
 
-        <header class="header-bar">
-    <div class="header-inner">
+    <!-- LOGO + TEXTE -->
+    <div class="header-brand">
+      <img
+        src="Logo.png.PNG"
+        alt="Logo L'instant d'une pause"
+        class="logo-header"
+      >
 
-        <!-- LOGO + TEXTE -->
-        <div class="header-brand">
-            <img
-              src="Logo.png.PNG"
-              alt="Logo L'instant d'une pause"
-              class="logo-header"
-            >
-
-            <div class="brand-text">
-                <h1 class="header-title">L’INSTANT D’UNE PAUSE</h1>
-                <span class="brand-subtitle">Massages bien-être – Sète</span>
-            </div>
-        </div>
-        
-        <button id="menu-btn" class="hamburger">☰</button>
-
-        <nav id="menu">
-            <a class="nav-link" href="index.html">Accueil</a>
-            <a class="nav-link" href="massages.html">Massages</a>
-            <a class="nav-link" href="tarifs.html">Tarifs</a>
-            <a class="nav-link" href="galerie.html">Galerie</a>
-            <a class="nav-link" href="avis.html">Avis clients</a>
-            <a class="nav-link" href="contact.html">Contact</a>
-        </nav>
-
+      <div class="brand-text">
+        <h1 class="header-title">L’INSTANT D’UNE PAUSE</h1>
+        <span class="brand-subtitle">Massages bien-être – Sète</span>
+      </div>
     </div>
+
+    <!-- MENU MOBILE -->
+    <button id="menu-btn" class="hamburger">☰</button>
+
+    <nav id="menu">
+      <a class="nav-link" href="index.html">Accueil</a>
+      <a class="nav-link" href="massages.html">Massages</a>
+      <a class="nav-link" href="tarifs.html">Tarifs</a>
+      <a class="nav-link" href="galerie.html">Galerie</a>
+      <a class="nav-link" href="avis.html">Avis clients</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </nav>
+
+  </div>
 </header>
+
 <script>
 document.getElementById("menu-btn").onclick = function () {
   const menu = document.getElementById("menu");
