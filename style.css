@@ -324,29 +324,29 @@ footer {
 }
 
 .logo-header {
-  width: 100px;          /* taille du logo */
+  width: 100px;
   height: auto;
   display: block;
   background: transparent;
 }
 
-/* Texte à côté du logo */
 .brand-text {
   display: flex;
   flex-direction: column;
 }
+
 /* Bouton menu hamburger */
 .hamburger {
-  display: none; /* visible seulement en mobile */
+  display: none; /* caché par défaut (desktop) */
   background: none;
   border: none;
   cursor: pointer;
-
   font-family: "Playfair Display","Times New Roman",serif;
   font-size: 2rem;
   line-height: 1;
-  color: #7a5f4d; /* même couleur que le titre */
+  color: #7a5f4d;
 }
+
 /* Responsive mobile */
 @media (max-width: 840px) {
   .header-brand {
