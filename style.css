@@ -331,27 +331,20 @@ footer {
 /*        RESPONSIVE MOBILE      */
 /* ----------------------------- */
 
-  .hero-content {
-    max-width: 100%;
-    padding: 1.3rem;
-  }
-
-  .hero-overlay {
-    background: linear-gradient(
-      160deg,
-      rgba(0,0,0,0.6) 0,
-      rgba(0,0,0,0.25) 55%,
-      transparent 95%
-    );
-  }
+@media (max-width: 840px) {
 
   nav {
     display: none;
     flex-direction: column;
     align-items: center;
     background: rgba(246,238,229,0.98);
-    padding: 0.5rem 0;
+    padding: 0.6rem 0;
     border-radius: 999px;
+    margin-top: 0.6rem;
+  }
+
+  .hamburger {
+    display: block; /* visible sur mobile */
   }
 
   .header-inner {
@@ -366,17 +359,31 @@ footer {
   }
 
   .logo-header {
-    width: 56px;
+    width: 80px; /* logo plus grand sur iPhone */
   }
 
-  .hamburger {
-    display: block; /* visible UNIQUEMENT en mobile */
+  .hero-content {
+    max-width: 100%;
+    padding: 1.3rem;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      160deg,
+      rgba(0,0,0,0.6) 0,
+      rgba(0,0,0,0.25) 55%,
+      transparent 95%
+    );
   }
 }
 
 @media (max-width: 600px) {
   .hero-title {
     font-size: 1.8rem;
+  }
+
+  .tarif-item {
+    font-size: 0.95rem;
   }
 }
 
