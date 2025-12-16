@@ -413,3 +413,7 @@ footer {
     font-size: 0.95rem;
   }
 }
+/* Correction couleur bouton menu iPhone */
+.hamburger {
+  color: #7a5f4d !important;
+}
