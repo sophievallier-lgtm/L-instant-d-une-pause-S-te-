@@ -397,19 +397,6 @@ footer {
 }
 
 /* Responsive mobile */
-@media (max-width: 840px) {
-  .header-brand {
-    flex-direction: column;
-    text-align: center;
-    gap: 0.4rem;
-  }
-
-}
-@media (max-width: 600px) {
-  .tarif-item {
-    font-size: 0.95rem;
-  }
-}
 /* Correction couleur bouton menu iPhone */
 .hamburger {
   color: #7a5f4d !important;
