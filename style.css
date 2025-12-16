@@ -103,15 +103,6 @@ nav {
   background: rgba(91,64,50,0.06);
 }
 
-/* bouton hamburger (mobile) */
-.hamburger {
-  display: none;
-  border: none;
-  background: transparent;
-  font-size: 1.6rem;
-  cursor: pointer;
-}
-
 /* ----------------------------- */
 /*             HERO              */
 /* ----------------------------- */
@@ -343,10 +334,6 @@ footer {
     margin-top: 0.6rem;
   }
 
-  .hamburger {
-    display: block; /* visible sur mobile */
-  }
-
   .header-inner {
     flex-direction: column;
     align-items: center;
@@ -407,18 +394,6 @@ footer {
 .brand-text {
   display: flex;
   flex-direction: column;
-}
-
-/* Bouton menu hamburger */
-.hamburger {
-  display: none; /* caché par défaut (desktop) */
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-family: "Playfair Display","Times New Roman",serif;
-  font-size: 2rem;
-  line-height: 1;
-  color: #7a5f4d;
 }
 
 /* Responsive mobile */
