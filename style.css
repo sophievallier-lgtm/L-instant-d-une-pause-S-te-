@@ -324,18 +324,23 @@ footer {
 
 @media (max-width: 840px) {
 
-  .header-brand {
+  .header-inner {
     flex-direction: column;
-    text-align: center;
-    gap: 0.4rem;
+    align-items: center;
+    padding-top: 0.8rem;   /* ← espace pour le logo */
+    padding-bottom: 0.6rem;
+  }
+
+  .header-brand {
+    gap: 0.3rem; /* rapproche logo + texte */
   }
 
   .logo-header {
-    width: 130px;
+    width: 130px; /* le logo est réellement agrandi */
   }
 
   .header-brand .brand-subtitle {
-    margin-top: 0.15rem;
+    margin-top: 0.1rem;
     margin-bottom: 0;
   }
 
