@@ -297,6 +297,36 @@ footer {
   color: #5b4032;
 }
 
+.tarifs-list {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.tarif-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin: 0.8rem 0;
+}
+
+.tarif-label {
+  flex: 0 1 auto;
+  max-width: 75%;
+}
+
+.tarif-dots {
+  flex: 1;
+  border-bottom: 1px dotted rgba(91, 64, 50, 0.35);
+  transform: translateY(-3px);
+}
+
+.tarif-price {
+  flex: 0 0 auto;
+  min-width: 70px;
+  text-align: right;
+  font-weight: 600;
+}
+
 /* ----------------------------- */
 /*        RESPONSIVE MOBILE      */
 /* ----------------------------- */
