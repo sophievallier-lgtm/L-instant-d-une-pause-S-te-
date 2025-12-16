@@ -324,7 +324,7 @@ footer {
 
 @media (max-width: 840px) {
   .logo-header {
-    width: 110px; /* ← logo agrandi sur iPhone */
+    width: 120px; /* ← logo agrandi sur iPhone */
   }
 }
 
@@ -347,10 +347,6 @@ footer {
     flex-direction: column;
     text-align: center;
     gap: 0.4rem;
-  }
-
-  .logo-header {
-    width: 80px; /* logo plus grand sur iPhone */
   }
 
   .hero-content {
@@ -422,8 +418,3 @@ button.hamburger {
   .header-inner {
     gap: 0.6rem;
   }
-
-  .logo-header {
-    width: 120px; /* équilibre parfait sur iPhone */
-  }
-}
