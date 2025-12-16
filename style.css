@@ -324,10 +324,13 @@ footer {
 
 @media (max-width: 840px) {
   .logo-header {
-    width: 120px; /* ← logo agrandi sur iPhone */
+    width: 120px; /* logo agrandi sur iPhone */
+  }
+
+  .header-brand {
+    gap: 0.8rem; /* espace ajusté entre logo et texte */
   }
 }
-
   nav {
     display: none;
     flex-direction: column;
