@@ -413,3 +413,17 @@ button.hamburger {
   color: #7a5f4d !important;
   box-shadow: none;
 
+@media (max-width: 840px) {
+  .header-bar {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
+
+  .header-inner {
+    gap: 0.6rem;
+  }
+
+  .logo-header {
+    width: 120px; /* équilibre parfait sur iPhone */
+  }
+}
