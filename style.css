@@ -422,45 +422,4 @@ button.hamburger {
   border: none;
   color: #7a5f4d !important;
   box-shadow: none;
-}
-/* ============================= */
-/*          LOGO HEADER          */
-/* ============================= */
 
-/* Logo à gauche + texte à droite (pro) */
-.header-brand{
-  display:flex;
-  align-items:center;
-  gap: 1rem;
-}
-
-/* ✅ On agrandit le logo sans toucher aux polices */
-.logo-header{
-  width: 120px;        /* desktop/tablette */
-  height: auto;
-  display:block;
-}
-
-/* On ne touche PAS aux polices / tailles du texte */
-.brand-text{
-  display:flex;
-  flex-direction:column;
-}
-
-/* ----------------------------- */
-/*        MOBILE (iPhone)        */
-/* ----------------------------- */
-@media (max-width: 840px){
-
-  /* on garde logo à gauche + texte à droite */
-  .header-brand{
-    flex-direction: row;
-    text-align: left;
-    width: 100%;
-    justify-content: center; /* ou flex-start si tu veux tout à gauche */
-  }
-
-  .logo-header{
-    width: 95px;       /* ✅ plus grand sur iPhone */
-  }
-}
