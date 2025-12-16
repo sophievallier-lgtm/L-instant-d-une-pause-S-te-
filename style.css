@@ -323,6 +323,10 @@ footer {
 /* ----------------------------- */
 
 @media (max-width: 840px) {
+  .logo-header {
+    width: 110px; /* ← logo agrandi sur iPhone */
+  }
+}
 
   nav {
     display: none;
@@ -396,7 +400,6 @@ footer {
   flex-direction: column;
 }
 
-/* Responsive mobile */
 /* Correction couleur bouton menu iPhone */
 .hamburger {
   color: #7a5f4d !important;
