@@ -417,3 +417,12 @@ footer {
 .hamburger {
   color: #7a5f4d !important;
 }
+/* Correction bouton hamburger sur iOS uniquement */
+button.hamburger {
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+  border: none;
+  color: #7a5f4d !important;
+  box-shadow: none;
+}
