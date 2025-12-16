@@ -258,6 +258,45 @@ footer {
   gap: 0.4rem;
 }
 
+/* ============================= */
+/*        TARIFS LISTE           */
+/* ============================= */
+
+.tarifs-list {
+  margin-top: 2rem;
+}
+
+.tarif-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+}
+
+.tarif-label {
+  white-space: nowrap;
+}
+
+.tarif-dots {
+  flex: 1;
+  border-bottom: 1px dotted rgba(91, 64, 50, 0.4);
+  margin-bottom: 0.3rem;
+}
+
+.tarif-price {
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+/* Note sous les tarifs */
+.note-tarifs {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #5b4032;
+}
+
 /* ----------------------------- */
 /*        RESPONSIVE MOBILE      */
 /* ----------------------------- */
@@ -361,4 +400,9 @@ footer {
 }
 .hamburger {
   display: block;
+}
+@media (max-width: 600px) {
+  .tarif-item {
+    font-size: 0.95rem;
+  }
 }
