@@ -391,7 +391,7 @@ footer {
 }
 
 .logo-header {
-  width: 100px;
+  width: 140px;   /* ← taille plus visible */
   height: auto;
   display: block;
   background: transparent;
