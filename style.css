@@ -323,13 +323,22 @@ footer {
 /* ----------------------------- */
 
 @media (max-width: 840px) {
-  .logo-header {
-    width: 120px; /* logo agrandi sur iPhone */
-  }
 
   .header-brand {
-    gap: 0.8rem; /* espace ajusté entre logo et texte */
+    flex-direction: column;
+    text-align: center;
+    gap: 0.4rem;
   }
+
+  .logo-header {
+    width: 130px;
+  }
+
+  .header-brand .brand-subtitle {
+    margin-top: 0.15rem;
+    margin-bottom: 0;
+  }
+
 }
   nav {
     display: none;
