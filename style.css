@@ -331,8 +331,6 @@ footer {
 /*        RESPONSIVE MOBILE      */
 /* ----------------------------- */
 
-@media (max-width: 840px) {
-
   .hero-content {
     max-width: 100%;
     padding: 1.3rem;
@@ -427,9 +425,6 @@ footer {
   .logo-header {
     width: 56px;
   }
-}
-.hamburger {
-  display: block;
 }
 @media (max-width: 600px) {
   .tarif-item {
