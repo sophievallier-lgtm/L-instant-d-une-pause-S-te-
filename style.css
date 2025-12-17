@@ -31,9 +31,9 @@ img {
   display: block;
 }
 
-/* ----------------------------- */
-/*           HEADER              */
-/* ----------------------------- */
+/* ============================= */
+/*            HEADER             */
+/* ============================= */
 
 .header-bar {
   position: sticky;
@@ -47,43 +47,51 @@ img {
 .header-inner {
   max-width: 1120px;
   margin: 0 auto;
-  padding: 0.4rem 1.25rem;
+  padding: 0.6rem 1.25rem;
   display: flex;
   align-items: center;
-  gap: 0.9rem;
+  gap: 1rem;
 }
 
-/* TITRE PRINCIPAL */
+/* Logo + texte */
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.logo-header {
+  width: 120px; /* desktop */
+  height: auto;
+}
+
+/* Texte */
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
 .header-title {
   margin: 0;
   font-family: "Playfair Display","Times New Roman",serif;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   font-size: 1.4rem;
-  color: #7a5f4d; /* même couleur que le sous-titre */
+  color: #7a5f4d;
 }
 
-/* SOUS-TITRE “massages bien-être – SÈTE” */
 .header-brand .brand-subtitle {
-  display: block;
   font-family: "Playfair Display", serif;
   font-size: 1.1rem;
-  font-weight: 400;
   letter-spacing: 0.12em;
   color: #7a5f4d;
-  margin-top: 0.3rem;
-  margin-bottom: 0.4rem;
+  margin-top: 0.25rem;
   opacity: 0.95;
-  text-transform: lowercase;
 }
 
-.header-brand .brand-subtitle::first-letter {
-  text-transform: uppercase;
-}
-
-/* ----------------------------- */
+/* ============================= */
 /*             NAV               */
-/* ----------------------------- */
+/* ============================= */
 
 nav {
   display: flex;
@@ -94,333 +102,26 @@ nav {
 .nav-link {
   padding: 0.35rem 0.8rem;
   border-radius: 999px;
-  border: 1px solid transparent;
-  cursor: pointer;
 }
 
 .nav-link:hover {
-  border-color: rgba(91,64,50,0.25);
+  border: 1px solid rgba(91,64,50,0.25);
   background: rgba(91,64,50,0.06);
 }
 
-/* ----------------------------- */
-/*             HERO              */
-/* ----------------------------- */
-
-.hero {
-  position: relative;
-  max-width: 1120px;
-  margin: 0.9rem auto 1.3rem;
-  padding: 0 1.25rem;
-}
-
-.hero-banner {
-  border-radius: 26px;
-  overflow: hidden;
-  box-shadow: 0 18px 45px rgba(0,0,0,0.28);
-  position: relative;
-}
-
-.hero-banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(120deg, rgba(0,0,0,0.55) 0, rgba(0,0,0,0.15) 55%, transparent 85%);
-}
-
-.hero-content {
-  position: absolute;
-  inset: 0;
-  padding: 1.8rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 55%;
-}
-
-.hero-title {
-  font-family: "Playfair Display","Times New Roman",serif;
-  font-size: 2.1rem;
-  color: #fff;
-  margin: 0 0 0.4rem;
-}
-
-.hero-subtitle {
-  font-size: 1rem;
-  color: #f7eee3;
-  margin: 0 0 0.9rem;
-}
-
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.4rem;
-  padding: 0.6rem 1.3rem;
-  border-radius: 999px;
-  border: none;
-  cursor: pointer;
-  font-size: 0.95rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.15s ease;
-}
-
-.btn-principal {
-  background: var(--chocolat);
-  color: #fff;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.24);
-}
-
-.btn-principal:hover {
-  background: var(--chocolat-fonce);
-  transform: translateY(-1px);
-}
-
-.btn-secondaire {
-  background: rgba(246,238,229,0.1);
-  color: #f7eee3;
-  border: 1px solid rgba(246,238,229,0.6);
-}
-
-.btn-secondaire:hover {
-  background: rgba(246,238,229,0.2);
-}
-
-/* ----------------------------- */
-/*            CONTENT            */
-/* ----------------------------- */
-
-main {
-  max-width: 1120px;
-  margin: 0 auto 2.2rem;
-  padding: 0 1.25rem;
-}
-
-.section {
-  margin-top: 1.6rem;
-}
-
-.section h2 {
-  font-family: "Playfair Display","Times New Roman",serif;
-  font-size: 1.5rem;
-  color: var(--chocolat-fonce);
-  margin-bottom: 0.7rem;
-}
-
-.carte {
-  background: var(--carte);
-  border-radius: 22px;
-  padding: 1rem 1.2rem;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-}
-
-.carte p {
-  margin: 0.4rem 0;
-}
-
-/* ----------------------------- */
-/*            FOOTER             */
-/* ----------------------------- */
-
-footer {
-  background: #2b2018;
-  color: #f6eee5;
-  padding: 1.2rem 1.25rem 1.6rem;
-  font-size: 0.8rem;
-}
-
-.footer-inner {
-  max-width: 1120px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-}
-
-/* ============================= */
-/*        TARIFS LISTE           */
-/* ============================= */
-
-.tarifs-list {
-  margin-top: 2rem;
-}
-
-.tarif-item {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  margin-bottom: 1.2rem;
-  font-size: 1rem;
-}
-
-.tarif-label {
-  white-space: nowrap;
-}
-
-.tarif-dots {
-  flex: 1;
-  border-bottom: 1px dotted rgba(91, 64, 50, 0.4);
-  margin-bottom: 0.3rem;
-}
-
-.tarif-price {
-  white-space: nowrap;
-  font-weight: 600;
-}
-
-/* Note sous les tarifs */
-.note-tarifs {
-  margin-top: 2rem;
-  font-size: 0.9rem;
-  text-align: center;
-  color: #5b4032;
-}
-
-.tarifs-list {
-  max-width: 720px;
-  margin: 0 auto;
-}
-
-.tarif-item {
-  display: flex;
-  align-items: baseline;
-  gap: 0.6rem;
-  margin: 0.8rem 0;
-}
-
-.tarif-label {
-  flex: 0 1 auto;
-  max-width: 75%;
-}
-
-.tarif-dots {
-  flex: 1;
-  border-bottom: 1px dotted rgba(91, 64, 50, 0.35);
-  transform: translateY(-3px);
-}
-
-.tarif-price {
-  flex: 0 0 auto;
-  min-width: 70px;
-  text-align: right;
-  font-weight: 600;
-}
-
-/* ----------------------------- */
-/*        RESPONSIVE MOBILE      */
-/* ----------------------------- */
-
-@media (max-width: 840px) {
-
-  .header-inner {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 0.8rem;   /* ← espace pour le logo */
-    padding-bottom: 0.6rem;
-  }
-
-  .header-brand {
-    gap: 0.3rem; /* rapproche logo + texte */
-  }
-
-  .header-brand .brand-subtitle {
-    margin-top: 0.1rem;
-    margin-bottom: 0;
-  }
-
-}
-  nav {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    background: rgba(246,238,229,0.98);
-    padding: 0.6rem 0;
-    border-radius: 999px;
-    margin-top: 0.6rem;
-  }
-
-  .header-inner {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .header-brand {
-    flex-direction: column;
-    text-align: center;
-    gap: 0.4rem;
-  }
-
-  .hero-content {
-    max-width: 100%;
-    padding: 1.3rem;
-  }
-
-  .hero-overlay {
-    background: linear-gradient(
-      160deg,
-      rgba(0,0,0,0.6) 0,
-      rgba(0,0,0,0.25) 55%,
-      transparent 95%
-    );
-  }
-}
-
-@media (max-width: 600px) {
-  .hero-title {
-    font-size: 1.8rem;
-  }
-
-  .tarif-item {
-    font-size: 0.95rem;
-  }
-}
-
-/* ============================= */
-/*          LOGO HEADER          */
-/* ============================= */
-
-.header-brand {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.brand-text {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Correction couleur bouton menu iPhone */
+/* Hamburger */
 .hamburger {
-  color: #7a5f4d !important;
-}
-/* Correction bouton hamburger sur iOS uniquement */
-button.hamburger {
-  -webkit-appearance: none;
-  appearance: none;
+  display: none;
   background: none;
   border: none;
-  color: #7a5f4d !important;
-  box-shadow: none;
-  }
+  cursor: pointer;
+  font-family: "Playfair Display","Times New Roman",serif;
+  font-size: 2rem;
+  color: #7a5f4d;
+}
 
-  .header-inner {
-    gap: 0.6rem;
-  }
 /* ============================= */
-/*   LOGO PLUS PRÉSENT (MOBILE)  */
+/*        RESPONSIVE MOBILE      */
 /* ============================= */
 
 @media (max-width: 840px) {
@@ -433,21 +134,37 @@ button.hamburger {
   }
 
   .header-brand {
-    gap: 0.2rem; /* rapproche logo + texte */
+    flex-direction: column;
+    text-align: center;
+    gap: 0.25rem;
   }
 
   .logo-header {
-    width: 150px;      /* 🔥 logo VRAIMENT plus grand */
-    margin-top: -0.4rem;
-  }
-
-  .header-title {
-    margin-top: 0;
+    width: 150px;        /* 🔥 LOGO AGRANDI */
+    margin-top: -0.3rem;
   }
 
   .header-brand .brand-subtitle {
     margin-top: 0.1rem;
-    margin-bottom: 0;
   }
 
+  nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(246,238,229,0.98);
+    padding: 0.6rem 0;
+    border-radius: 999px;
+    margin-top: 0.6rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-title {
+    font-size: 1.8rem;
+  }
 }
