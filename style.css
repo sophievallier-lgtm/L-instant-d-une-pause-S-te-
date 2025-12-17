@@ -135,7 +135,7 @@ nav {
   }
 
   .logo-header {
-    width: 150px;        /* 🔥 LOGO AGRANDI */
+    width: 110px;        /* 🔥 LOGO AGRANDI *
     margin-top: -0.3rem;
   }
 
@@ -168,7 +168,7 @@ nav {
 /* ============================= */
 
 .logo-header {
-  width: 140px;      /* taille desktop */
+  width: 110px;      /* taille desktop */
   height: auto;
 }
 /* RÉDUIRE LA HAUTEUR DU HEADER SUR MOBILE */
