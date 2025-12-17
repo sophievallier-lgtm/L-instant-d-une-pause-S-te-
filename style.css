@@ -118,60 +118,6 @@ nav {
 /* ============================= */
 /*        RESPONSIVE MOBILE      */
 /* ============================= */
-
-@media (max-width: 840px) {
-
-  .header-inner {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 0.5rem;
-    padding-bottom: 0.4rem;
-  }
-
-  .header-brand {
-    flex-direction: column;
-    text-align: center;
-    gap: 0.25rem;
-  }
-
-  .logo-header {
-    width: 110px;        /* 🔥 LOGO AGRANDI *
-    margin-top: -0.3rem;
-  }
-
-  .header-brand .brand-subtitle {
-    margin-top: 0.1rem;
-  }
-
-  nav {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    background: rgba(246,238,229,0.98);
-    padding: 0.6rem 0;
-    border-radius: 999px;
-    margin-top: 0.6rem;
-  }
-
-  .hamburger {
-    display: block;
-  }
-}
-
-@media (max-width: 600px) {
-  .header-title {
-    font-size: 1.8rem;
-  }
-}
-/* ============================= */
-/*   LOGO HEADER – FIX FINAL     */
-/* ============================= */
-
-.logo-header {
-  width: 110px;      /* taille desktop */
-  height: auto;
-}
-/* RÉDUIRE LA HAUTEUR DU HEADER SUR MOBILE */
 @media (max-width: 840px) {
 
   .header-bar {
@@ -179,18 +125,33 @@ nav {
   }
 
   .header-inner {
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-    gap: 0.3rem;
+    padding: 0.6rem 1rem 0.5rem;
+    gap: 0.35rem;
   }
 
   .header-brand {
     gap: 0.25rem;
   }
 
-  .header-brand .brand-subtitle {
-    margin-top: 0.1rem;
-    margin-bottom: 0;
+  .logo-header {
+    width: 120px;   /* taille élégante, pas massive */
   }
 
+  .header-title {
+    line-height: 1.2;
+  }
+
+  .brand-subtitle {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+}
+/* ============================= */
+/*   LOGO HEADER – FIX FINAL     */
+/* ============================= */
+.logo-header {
+  width: 120px;   /* taille idéale : visible mais élégante */
+  height: auto;
+  display: block;
 }
