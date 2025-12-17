@@ -335,10 +335,6 @@ footer {
     gap: 0.3rem; /* rapproche logo + texte */
   }
 
-  .logo-header {
-    width: 130px; /* le logo est réellement agrandi */
-  }
-
   .header-brand .brand-subtitle {
     margin-top: 0.1rem;
     margin-bottom: 0;
@@ -401,13 +397,6 @@ footer {
   gap: 1.5rem;
 }
 
-.logo-header {
-  width: 140px;   /* ← taille plus visible */
-  height: auto;
-  display: block;
-  background: transparent;
-}
-
 .brand-text {
   display: flex;
   flex-direction: column;
@@ -425,6 +414,7 @@ button.hamburger {
   border: none;
   color: #7a5f4d !important;
   box-shadow: none;
+  }
 
 @media (max-width: 840px) {
   .header-bar {
@@ -450,11 +440,6 @@ button.hamburger {
 
   .header-brand {
     gap: 0.2rem; /* rapproche logo + texte */
-  }
-
-  .logo-header {
-    width: 140px;           /* ← logo vraiment visible */
-    margin-top: -0.3rem;   /* ← remonte le logo */
   }
 
   .header-title {
