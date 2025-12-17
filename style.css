@@ -416,12 +416,6 @@ button.hamburger {
   box-shadow: none;
   }
 
-@media (max-width: 840px) {
-  .header-bar {
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
-  }
-
   .header-inner {
     gap: 0.6rem;
   }
@@ -442,6 +436,11 @@ button.hamburger {
     gap: 0.2rem; /* rapproche logo + texte */
   }
 
+  .logo-header {
+    width: 150px;      /* 🔥 logo VRAIMENT plus grand */
+    margin-top: -0.4rem;
+  }
+
   .header-title {
     margin-top: 0;
   }
@@ -450,4 +449,5 @@ button.hamburger {
     margin-top: 0.1rem;
     margin-bottom: 0;
   }
+
 }
