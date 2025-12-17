@@ -163,3 +163,35 @@ nav {
     font-size: 1.8rem;
   }
 }
+/* ============================= */
+/*   LOGO HEADER – FIX FINAL     */
+/* ============================= */
+
+.logo-header {
+  width: 140px;      /* taille desktop */
+  height: auto;
+}
+
+/* Mobile iPhone */
+@media (max-width: 840px) {
+
+  .header-inner {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.6rem;
+    padding-bottom: 0.4rem;
+  }
+
+  .header-brand {
+    gap: 0.25rem;
+  }
+
+  .logo-header {
+    width: 160px;    /* 🔥 logo clairement plus grand */
+  }
+
+  .header-brand .brand-subtitle {
+    margin-top: 0.1rem;
+    margin-bottom: 0;
+  }
+}
