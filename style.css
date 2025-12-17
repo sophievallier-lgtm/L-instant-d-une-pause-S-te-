@@ -125,13 +125,6 @@ nav {
 /* ============================= */
 
 @media (max-width: 840px) {
-  .logo-header {
-    max-width: none;
-    width: 170px;    /* test volontairement très grand */
-  }
-}
-
-@media (max-width: 840px) {
 
   .header-inner {
     flex-direction: column;
@@ -174,10 +167,4 @@ nav {
   .header-title {
     font-size: 1.8rem;
   }
-}
-
-/* === FORCER LA TAILLE DU LOGO === */
-.logo-header {
-  max-width: none;   /* 🔥 enlève la limitation */
-  width: 160px;      /* taille réelle visible */
 }
