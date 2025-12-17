@@ -22,91 +22,91 @@ img{max-width:100%;display:block}
    HEADER
    ========================= */
 .header-bar{
-  position:sticky;
-  top:0;
-  z-index:50;
-  background:rgba(246,238,229,.95);
-  border-bottom:1px solid rgba(0,0,0,.06);
-  backdrop-filter:blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(246,238,229,.95);
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  backdrop-filter: blur(8px);
 }
 
 .header-inner{
-  max-width:1120px;
-  margin:0 auto;
-  padding:14px 20px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:16px;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 18px 16px 14px;
+  display: flex;
+  flex-direction: column;     /* ✅ tout en colonne */
+  align-items: center;        /* ✅ centré */
+  justify-content: center;
+  gap: 10px;
 }
 
 .header-brand{
-  display:flex;
-  align-items:center;
-  gap:14px;
-  min-width:0;
+  display: flex;
+  flex-direction: column;     /* ✅ logo au-dessus du texte */
+  align-items: center;
+  text-align: center;
+  gap: 10px;
 }
 
 .logo-header{
-  width:120px;   /* ✅ taille logo desktop */
-  height:auto;
-}
-
-.brand-text{
-  display:flex;
-  flex-direction:column;
-  min-width:0;
+  width: 48px;                /* ✅ petit logo “icone” comme la capture */
+  height: auto;
 }
 
 .header-title{
-  margin:0;
-  font-family:"Playfair Display","Times New Roman",serif;
-  letter-spacing:.14em;
-  text-transform:uppercase;
-  font-size:1.35rem;
-  color:var(--marron);
-  line-height:1.1;
+  margin: 0;
+  font-family: "Playfair Display","Times New Roman",serif;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  font-size: 1.55rem;
+  color: #7a5f4d;
+  line-height: 1.15;
 }
 
 .brand-subtitle{
-  margin-top:6px;
-  font-family:"Playfair Display","Times New Roman",serif;
-  font-size:1.05rem;
-  font-weight:400;
-  letter-spacing:.12em;
-  color:var(--marron);
-  opacity:.95;
+  margin: 6px 0 0;
+  font-family: "Playfair Display","Times New Roman",serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  letter-spacing: .12em;
+  color: #7a5f4d;
+  opacity: .95;
 }
 
-/* NAV desktop */
-#menu{
-  display:flex;
-  gap:10px;
-  align-items:center;
+/* Bouton menu (☰) centré sous le sous-titre */
+.hamburger{
+  display: inline-block;
+  border: none;
+  background: transparent;
+  color: #7a5f4d;
+  font-size: 2rem;
+  line-height: 1;
+  padding: 10px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
 }
+
+/* Nav : caché par défaut, s’ouvre avec ton JS */
+#menu{
+  display: none;              /* ✅ caché */
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 8px 0 0;
+}
+
 .nav-link{
-  padding:.35rem .8rem;
-  border-radius:999px;
-  border:1px solid transparent;
+  padding: .35rem .8rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
 }
 .nav-link:hover{
-  border-color:rgba(91,64,50,.25);
-  background:rgba(91,64,50,.06);
-}
-
-/* bouton hamburger */
-.hamburger{
-  display:none;            /* caché en desktop */
-  border:none;
-  background:transparent;
-  color:var(--marron);
-  font-size:2rem;
-  line-height:1;
-  padding:10px 14px;
-  border-radius:999px;
-  cursor:pointer;
-  -webkit-appearance:none;
-  appearance:none;
+  border-color: rgba(91,64,50,.25);
+  background: rgba(91,64,50,.06);
 }
 
 /* =========================
