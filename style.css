@@ -186,60 +186,122 @@ footer{
   .hero-title{font-size:1.85rem}
 }
 /* ============================= */
-/*        HEADER CLEAN           */
+/*           HEADER CLEAN         */
 /* ============================= */
 
-.header-clean {
-  background: #f6eee5;
-  text-align: center;
-  padding: 1rem 1rem 0.8rem;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
+.site-header{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(246,238,229,0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
 }
 
-.logo-clean {
-  width: 90px;   /* ← change seulement CE chiffre */
-  margin: 0 auto 0.4rem;
+.header-wrap{
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.brand-logo{
+  width: 54px;         /* ✅ logo “présent” */
+  height: auto;
   display: block;
 }
 
-.title-clean {
-  font-family: "Playfair Display", serif;
-  font-size: 1.4rem;
-  letter-spacing: 0.14em;
-  margin: 0;
-  color: #7a5f4d;
-}
-
-.subtitle-clean {
-  font-family: "Playfair Display", serif;
-  font-size: 1rem;
-  margin: 0.2rem 0 0.6rem;
-  color: #7a5f4d;
-}
-
-.menu-clean {
-  background: none;
-  border: none;
-  font-size: 1.8rem;
-  color: #7a5f4d;
-  cursor: pointer;
-}
-
-/* MENU */
-.nav-clean {
-  display: none;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1rem 0;
-}
-
-.nav-clean a {
-  text-decoration: none;
-  color: #3b2b20;
-  font-size: 1rem;
-}
-
-/* MENU OUVERT */
-.header-clean.open .nav-clean {
+.brand-text{
   display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.brand-title{
+  font-family: "Playfair Display","Times New Roman",serif;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 1.15rem;
+  color: #7a5f4d;
+  line-height: 1.1;
+}
+
+.brand-subtitle{
+  font-family: "Playfair Display","Times New Roman",serif;
+  font-size: 1rem;
+  letter-spacing: 0.10em;
+  color: #7a5f4d;
+  opacity: 0.95;
+  margin-top: 6px;
+}
+
+.menu-btn{
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-family: "Playfair Display","Times New Roman",serif;
+  font-size: 1.9rem;
+  line-height: 1;
+  color: #7a5f4d;
+  padding: 8px 10px;
+  border-radius: 999px;
+}
+
+.site-nav{
+  display: none;                 /* fermé par défaut */
+  flex-direction: column;
+  gap: 14px;
+  padding: 14px 18px 18px;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.site-nav a{
+  text-align: center;
+  color: #3b2b20;
+  font-size: 1.05rem;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+.site-nav a:hover{
+  background: rgba(91,64,50,0.06);
+}
+
+.site-nav.open{
+  display: flex;                 /* ✅ s’ouvre au clic */
+}
+
+/* Desktop : menu visible, bouton caché */
+@media (min-width: 841px){
+  .menu-btn{ display: none; }
+  .site-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 18px 14px;
+  }
+  .site-nav a{
+    font-size: 0.95rem;
+    padding: 8px 12px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+  }
+  .site-nav a:hover{
+    border-color: rgba(91,64,50,0.25);
+    background: rgba(91,64,50,0.06);
+  }
 }
