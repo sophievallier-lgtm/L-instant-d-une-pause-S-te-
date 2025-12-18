@@ -16,16 +16,22 @@
 
 <body>
 
-<header class="header-clean">
+<header class="site-header">
+  <div class="header-wrap">
 
-  <img src="Logo.png.PNG" alt="Logo L’instant d’une pause" class="logo-clean">
+    <div class="brand">
+      <img class="brand-logo" src="Logo.png.PNG" alt="Logo L'instant d'une pause">
+      <div class="brand-text">
+        <div class="brand-title">L’INSTANT D’UNE PAUSE</div>
+        <div class="brand-subtitle">Massages bien-être – Sète</div>
+      </div>
+    </div>
 
-  <h1 class="title-clean">L’INSTANT D’UNE PAUSE</h1>
-  <p class="subtitle-clean">Massages bien-être – Sète</p>
+    <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
 
-  <button class="menu-clean">☰</button>
+  </div>
 
-  <nav class="nav-clean">
+  <nav class="site-nav" id="siteNav">
     <a href="index.html">Accueil</a>
     <a href="massages.html">Massages</a>
     <a href="tarifs.html">Tarifs</a>
@@ -33,15 +39,17 @@
     <a href="avis.html">Avis clients</a>
     <a href="contact.html">Contact</a>
   </nav>
-
 </header>
 
 <script>
-document.getElementById("menu-btn").onclick = function () {
-  const menu = document.getElementById("menu");
-  menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
-};
+  const btn = document.getElementById("menuBtn");
+  const nav = document.getElementById("siteNav");
+  btn.addEventListener("click", () => {
+    const open = nav.classList.toggle("open");
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+  });
 </script>
+
 <main>
 
     <!-- HERO SECTION -->
