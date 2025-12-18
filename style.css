@@ -233,7 +233,7 @@ footer{
   }
 
   .logo-header{
-    width:150px; /* ✅ logo plus grand sur iPhone */
+    width:110px; /* ✅ logo plus grand sur iPhone */
   }
 
   .header-brand{
