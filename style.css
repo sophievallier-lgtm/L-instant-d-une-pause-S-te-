@@ -18,95 +18,72 @@ body{
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 
-/* =========================
-   HEADER
-   ========================= */
-.header-bar{
+/* ============================= */
+/*          HEADER CLEAN         */
+/* ============================= */
+
+.header-bar {
   position: sticky;
   top: 0;
-  z-index: 50;
-  background: rgba(246,238,229,.95);
-  border-bottom: 1px solid rgba(0,0,0,.06);
-  backdrop-filter: blur(8px);
+  background: #f6eee5;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  z-index: 10;
 }
 
-.header-inner{
+.header-inner {
   max-width: 1120px;
   margin: 0 auto;
-  padding: 18px 16px 14px;
+  padding: 0.7rem 1rem;
   display: flex;
-  flex-direction: column;     /* ✅ tout en colonne */
-  align-items: center;        /* ✅ centré */
-  justify-content: center;
-  gap: 10px;
-}
-
-.header-brand{
-  display: flex;
-  flex-direction: column;     /* ✅ logo au-dessus du texte */
+  flex-direction: column;
   align-items: center;
-  text-align: center;
-  gap: 10px;
+  gap: 0.35rem; /* contrôle direct de la hauteur */
 }
 
-.logo-header{
-  width: 48px;                /* ✅ petit logo “icone” comme la capture */
+/* Logo */
+.logo-header {
+  width: 90px; /* 🔥 change uniquement ce chiffre */
   height: auto;
 }
 
-.header-title{
+/* Texte */
+.header-title {
   margin: 0;
-  font-family: "Playfair Display","Times New Roman",serif;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-  font-size: 1.55rem;
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.12em;
   color: #7a5f4d;
-  line-height: 1.15;
+  text-align: center;
 }
 
-.brand-subtitle{
-  margin: 6px 0 0;
-  font-family: "Playfair Display","Times New Roman",serif;
-  font-size: 1.05rem;
-  font-weight: 400;
-  letter-spacing: .12em;
+.brand-subtitle {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
   color: #7a5f4d;
-  opacity: .95;
+  margin: 0;
 }
 
-/* Bouton menu (☰) centré sous le sous-titre */
-.hamburger{
-  display: inline-block;
+/* Hamburger */
+.hamburger {
+  margin-top: 0.4rem;
+  background: none;
   border: none;
-  background: transparent;
+  font-size: 1.6rem;
   color: #7a5f4d;
-  font-size: 2rem;
-  line-height: 1;
-  padding: 10px 14px;
-  border-radius: 999px;
   cursor: pointer;
-  -webkit-appearance: none;
-  appearance: none;
 }
 
-/* Nav : caché par défaut, s’ouvre avec ton JS */
-#menu{
-  display: none;              /* ✅ caché */
+/* Navigation mobile */
+nav {
+  display: none;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
-  width: 100%;
-  padding: 8px 0 0;
+  gap: 1rem;
+  padding: 1rem 0;
 }
 
-.nav-link{
-  padding: .35rem .8rem;
-  border-radius: 999px;
-  border: 1px solid transparent;
-}
-.nav-link:hover{
-  border-color: rgba(91,64,50,.25);
-  background: rgba(91,64,50,.06);
+nav a {
+  font-size: 1.1rem;
 }
 
 /* =========================
