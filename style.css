@@ -139,7 +139,7 @@ footer{
 }
 
 /* ============================= */
-/*          HEADER CLEAN         */
+/*      HEADER MOBILE FINAL      */
 /* ============================= */
 
 .header-bar{
@@ -161,17 +161,16 @@ footer{
   gap: 0.6rem;
 }
 
-/* Logo + titre */
 .header-brand{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.35rem;
   text-align: center;
+  gap: 0.35rem;
 }
 
 .logo-header{
-  width: 150px;   /* ✅ ICI tu agrandis */
+  width: 150px;   /* ← ICI la taille du logo */
   height: auto;
   display: block;
 }
@@ -202,12 +201,12 @@ footer{
   color: #7a5f4d;
   font-size: 2rem;
   line-height: 1;
-  padding: 0.25rem 0.6rem;
+  padding: 0.3rem 0.6rem;
   cursor: pointer;
 }
 
-/* Menu déroulant */
-.site-nav{
+/* Menu mobile */
+#menu{
   display: none;
   flex-direction: column;
   align-items: center;
@@ -215,11 +214,7 @@ footer{
   padding: 0.9rem 0 1.1rem;
 }
 
-.site-nav.open{
-  display: flex;
-}
-
-.site-nav a{
+#menu a{
   font-size: 1.05rem;
   color: #3b2b20;
 }
