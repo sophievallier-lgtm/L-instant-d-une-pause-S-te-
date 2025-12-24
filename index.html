@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>L’instant d’une pause – Massages bien-être à Sète</title>
 
   <!-- Police -->
@@ -17,32 +16,27 @@
 
 <body>
 
-<!-- ================= HEADER ================= -->
-<header class="site-header">
+<header class="header">
+  <div class="header-inner">
+    <img src="Logo.png.PNG" alt="Logo" class="logo">
 
-  <div class="header-top">
-    <img src="Logo.png.PNG" alt="Logo L’instant d’une pause" class="logo">
-
-    <h1 class="site-title">L’INSTANT D’UNE PAUSE</h1>
-    <p class="site-subtitle">Massages bien-être – Sète</p>
+    <h1 class="title">L’INSTANT D’UNE PAUSE</h1>
+    <p class="subtitle">Massages bien-être – Sète</p>
 
     <button class="menu-btn" id="menuBtn">☰</button>
   </div>
 
-  <nav class="mobile-menu" id="mobileMenu">
-    <a href="index.html">Accueil</a>
-    <a href="massages.html">Massages</a>
-    <a href="tarifs.html">Tarifs</a>
-    <a href="galerie.html">Galerie</a>
-    <a href="avis.html">Avis clients</a>
-    <a href="contact.html">Contact</a>
+  <nav class="menu" id="menu">
+    <a href="#">Accueil</a>
+    <a href="#">Massages</a>
+    <a href="#">Tarifs</a>
+    <a href="#">Galerie</a>
+    <a href="#">Avis clients</a>
+    <a href="#">Contact</a>
   </nav>
-
 </header>
 
-<!-- ================= CONTENU ================= -->
-<main class="content">
-
+<main class="main">
   <section class="hero">
     <img src="header.jpg" alt="Cabinet de massage">
     <div class="hero-text">
@@ -51,23 +45,21 @@
         Pour une peau plus lisse, un corps délesté des tensions  
         et un esprit profondément apaisé.
       </p>
-      <a href="massages.html" class="btn">Découvrir les massages</a>
+      <a href="#" class="btn">Découvrir les massages</a>
     </div>
   </section>
 
-  <section class="text">
+  <section class="content">
     <p>
-      Je masse parce que j’ai toujours été sensible au corps, aux émotions qu’il porte
-      et à ce qu’il exprime sans mots.
+      Je vous accueille dans un cocon chaleureux, avec bienveillance et sans jugement,
+      dans un espace dédié au relâchement et au mieux-être.
     </p>
   </section>
-
 </main>
 
-<!-- ================= SCRIPT MENU ================= -->
 <script>
   const btn = document.getElementById("menuBtn");
-  const menu = document.getElementById("mobileMenu");
+  const menu = document.getElementById("menu");
 
   btn.addEventListener("click", () => {
     menu.classList.toggle("open");
