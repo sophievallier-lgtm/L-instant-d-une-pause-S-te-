@@ -1,146 +1,120 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Massages – L'instant d'une pause</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Massages – L'instant d'une pause</title>
 
-    <!-- Police Playfair -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <!-- Police -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<script src="menu.js"></script>
-</body>
 
-<header class="header-bar">
-  <div class="header-inner">
+<body>
 
-    <div class="header-brand">
-      <img src="Logo.png.PNG" alt="Logo L'instant d'une pause" class="logo-header">
+<!-- HEADER UNIQUE -->
+<header class="site-header">
+  <div class="header-wrap">
+
+    <div class="brand">
+      <img src="Logo.png.PNG" alt="Logo L'instant d'une pause" class="brand-logo">
       <div class="brand-text">
-        <h1 class="header-title">L’INSTANT D’UNE PAUSE</h1>
+        <h1 class="brand-title">L’INSTANT D’UNE PAUSE</h1>
         <div class="brand-subtitle">Massages bien-être – Sète</div>
       </div>
     </div>
 
-    <button class="hamburger" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-
-    <nav class="site-nav" id="siteNav">
-      <a href="index.html">Accueil</a>
-      <a href="massages.html">Massages</a>
-      <a href="tarifs.html">Tarifs</a>
-      <a href="galerie.html">Galerie</a>
-      <a href="avis.html">Avis clients</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
 
   </div>
+
+  <nav class="site-nav" id="siteNav">
+    <a href="index.html">Accueil</a>
+    <a href="massages.html">Massages</a>
+    <a href="tarifs.html">Tarifs</a>
+    <a href="galerie.html">Galerie</a>
+    <a href="avis.html">Avis clients</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
-<script>
-  const btn = document.getElementById("menuBtn");
-  const nav = document.getElementById("siteNav");
-  btn.addEventListener("click", () => {
-    const open = nav.classList.toggle("open");
-    btn.setAttribute("aria-expanded", open ? "true" : "false");
-  });
-</script>
-
+<!-- CONTENU -->
 <main>
-    <section class="section">
-        <h1 class="page-title">Massages & protocoles</h1>
+  <section class="section">
+    <h2>Massages & protocoles</h2>
 
-        <div class="liste-prestations">
+    <div class="carte">
 
-              <!-- PR -->
-            <div class="prestation">
-            <h3>Palper-rouler manuel</h3>
-                <div class="duree">45 min - Travail ciblé sur la peau</div>
-                <p>Travail ciblé sur les tissus cutanés
+      <h3>Palper-rouler manuel</h3>
+      <p><strong>45 min – Travail ciblé sur la peau</strong></p>
+      <p>
+        Le palper-rouler manuel est une technique de massage rythmée et précise,
+        réalisée exclusivement avec les mains. Par des mouvements de saisie,
+        de mobilisation et de relâchement des tissus, ce massage vise à améliorer
+        la souplesse de la peau et la fluidité des tissus.
+      </p>
 
-Le palper-rouler manuel est une technique de massage rythmée et précise, réalisée exclusivement avec les mains.
-Par des mouvements de saisie, de mobilisation et de relâchement des tissus, ce massage vise à stimuler les zones travaillées et à améliorer la souplesse de la peau.
+      <h3>Drainage manuel bien-être</h3>
+      <p><strong>45 min – Zones ciblées</strong></p>
+      <p>
+        Massage manuel profond et rythmé favorisant une sensation de légèreté
+        et de relâchement global.
+      </p>
 
-Les manœuvres favorisent une meilleure fluidité des tissus, contribuent à lisser l’aspect de la peau et procurent une sensation de légèreté et de tonicité.
-Ce soin est proposé dans une approche de bien-être, respectueuse du corps et de ses réactions.</p>
-            </div>
+      <h3>Massage bien-être</h3>
+      <p><strong>1 h – Corps complet</strong></p>
+      <p>
+        Massage enveloppant, fluide et relaxant, idéal pour apaiser le corps
+        et le mental.
+      </p>
 
-            
-            <!-- Drainage -->
-            <div class="prestation">
-                <h3>Drainage manuel bien-être</h3>
-                <div class="duree">45 min – Zones ciblées</div>
-                <p>Massage manuel profond et rythmé, stimulant la circulation corporelle et favorisant une sensation de légèreté durable.
-La gestuelle précise agit sur les tissus pour améliorer le confort corporel et le relâchement général.</p>
-            </div>
+      <h3>Massage du visage</h3>
+      <p><strong>45 min</strong></p>
+      <p>
+        Massage manuel du visage, du cou et du décolleté,
+        favorisant la détente des traits et une sensation
+        de fraîcheur et de lâcher-prise.
+      </p>
 
-            
-            <!-- Massage 1 -->
-            <div class="prestation">
-                 <h3>Massage bien-être 1h</h3>
-                <div class="duree">1h – Corps complet</div>
-                <p>Massage enveloppant, fluide et relaxant, idéal pour relâcher les tensions et apaiser le mental.</p>
-            </div>
-                
-            
-            <!-- Visage -->
-            <div class="prestation">
-                <h3>Massage du visage</h3>
-                <div class="duree">45 min – Relaxation faciale</div>
-                <p>Massage manuel du visage, du cou et du décolleté, réalisé avec des manœuvres douces, toniques et enveloppantes.
-La gestuelle précise favorise la détente des traits, stimule la micro-circulation cutanée et apporte une sensation de fraîcheur et de légèreté.
+      <h3>Massage signature</h3>
+      <p><strong>1 h 30 ou 2 h</strong></p>
+      <p>
+        Massage global et personnalisé, profond et enveloppant,
+        pour une détente complète du corps et de l’esprit.
+      </p>
 
-Ce massage contribue à un teint plus lumineux, des traits reposés et une profonde détente, tout en offrant un véritable moment de relâchement global.</p>
-            </div>
+      <h3>Massage détente du dos</h3>
+      <p><strong>30 min</strong></p>
+      <p>
+        Massage ciblé du dos, des épaules et de la nuque,
+        pour relâcher les tensions accumulées.
+      </p>
 
-            <!-- Signature 1h30 & 2 h -->
-            <div class="prestation">
-                <h3>Massage signature</h3>
-                <div class="duree">1h30 ou 2 h – Détente profonde</div>
-                <p>Massage global et personnalisé, réalisé des pieds à la tête, incluant également le travail des mains, pour une détente complète et harmonieuse du corps.
-La gestuelle fluide, enveloppante et profonde permet au corps de se déposer progressivement, favorisant un relâchement durable et un apaisement physique et mental.
+      <h3>Massage énergétique</h3>
+      <p><strong>1 h 30 ou 2 h</strong></p>
+      <p>
+        Massage profond et conscient, favorisant un recentrage,
+        une libération émotionnelle et un apaisement intérieur.
+      </p>
 
-La version 2 heures prolonge l’expérience par un massage approfondi de la tête et du visage, offrant une sensation de lâcher-prise encore plus profonde et une détente globale renforcée.
-Ce massage signature s’adresse aux personnes souhaitant s’accorder un temps long, respectueux du rythme du corps, pour se recentrer et se détendre pleinement.</p>
-            </div>
-
-        <!-- Massage détente du dos -->
-<div class="prestation">
-  <h3>Massage détente du dos</h3>
-  <div class="duree">30 min</div>
-  <p>
-    Massage ciblé et tonique, concentré sur le dos, les épaules et la nuque.
-    La gestuelle appuyée et rythmée vise à relâcher les tensions accumulées
-    et à procurer une sensation de détente profonde et immédiate.
-  </p>
-</div>
-            <!-- Énergétique -->
-            <div class="prestation">
-                <h3>Massage énergétique</h3>
-                <div class="duree">1h30 ou 2h – Équilibrage</div>
-                <p>Massage profond et conscient, alliant gestes enveloppants, pressions lentes et toucher intuitif.
-Cette approche globale invite à un relâchement total du corps et du mental, permettant de déposer ce qui pèse, de faire silence à l’intérieur et de retrouver un espace de respiration.
-
-Par une alternance de gestes à la fois puissants et doux, avec ou sans contact selon les besoins, ce massage accompagne les personnes traversant des périodes de mal-être, de deuil, de perte de confiance ou de désorientation intérieure.
-Il favorise un recentrage profond, une reconnexion à soi et une libération émotionnelle progressive, dans un cadre sécurisant et respectueux.
-
-Ce massage est une véritable pause, un temps pour se vider, se réaligner et retrouver une présence plus stable, plus ancrée à soi-même..</p>
-            </div>
-
-        </div>
-    </section>
+    </div>
+  </section>
 </main>
 
 <!-- FOOTER -->
 <footer>
-    <div class="footer-inner">
-        <div>© L'instant d'une pause – Sète</div>
-        <div>Massages bien-être : pratiques de relaxation, sans visée thérapeutique ni médicale.</div>
-    </div>
+  <div class="footer-inner">
+    <div>© L'instant d'une pause – Sète</div>
+    <div>Massages bien-être : pratiques de relaxation, non thérapeutiques.</div>
+  </div>
 </footer>
+
+<!-- JS MENU -->
+<script src="menu.js"></script>
 
 </body>
 </html>
