@@ -15,70 +15,62 @@
 
 <body>
 
-<header class="header-bar">
-  <div class="header-inner">
+<!-- ================= HEADER ================= -->
+<header class="site-header">
 
-    <div class="header-brand">
-      <img src="Logo.png.PNG" alt="Logo L'instant d'une pause" class="logo-header">
-      <div class="brand-text">
-        <h1 class="header-title">L’INSTANT D’UNE PAUSE</h1>
-        <div class="brand-subtitle">Massages bien-être – Sète</div>
-      </div>
-    </div>
+  <div class="header-top">
+    <img src="Logo.png.PNG" alt="Logo L’instant d’une pause" class="logo">
 
-    <button class="hamburger" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <h1 class="site-title">L’INSTANT D’UNE PAUSE</h1>
+    <p class="site-subtitle">Massages bien-être – Sète</p>
 
-    <nav class="site-nav" id="siteNav">
-      <a href="index.html">Accueil</a>
-      <a href="massages.html">Massages</a>
-      <a href="tarifs.html">Tarifs</a>
-      <a href="galerie.html">Galerie</a>
-      <a href="avis.html">Avis clients</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-
+    <button class="menu-btn" id="menuBtn">☰</button>
   </div>
+
+  <nav class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Accueil</a>
+    <a href="massages.html">Massages</a>
+    <a href="tarifs.html">Tarifs</a>
+    <a href="galerie.html">Galerie</a>
+    <a href="avis.html">Avis clients</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
 </header>
 
-<script>
-  const btn = document.getElementById("menuBtn");
-  const nav = document.getElementById("siteNav");
-  btn.addEventListener("click", () => {
-    const open = nav.classList.toggle("open");
-    btn.setAttribute("aria-expanded", open ? "true" : "false");
-  });
-</script>
+<!-- ================= CONTENU ================= -->
+<main class="content">
 
-<main>
-    <section class="section">
-        <h1>Avis clients</h1>
+  <section class="hero">
+    <img src="header.jpg" alt="Cabinet de massage">
+    <div class="hero-text">
+      <h2>Une pause qui vous ressemble</h2>
+      <p>
+        Pour une peau plus lisse, un corps délesté des tensions  
+        et un esprit profondément apaisé.
+      </p>
+      <a href="massages.html" class="btn">Découvrir les massages</a>
+    </div>
+  </section>
 
-        <div class="carte">
-            <p>Merci pour vos retours et votre confiance.  
-            Voici les avis laissés par les personnes venues profiter d’un moment de détente.</p>
-        </div>
+  <section class="text">
+    <p>
+      Je masse parce que j’ai toujours été sensible au corps, aux émotions qu’il porte
+      et à ce qu’il exprime sans mots.
+    </p>
+  </section>
 
-        <!-- Widget des avis Google -->
-        <div style="
-            margin-top:1rem;
-            border-radius:22px;
-            overflow:hidden;
-            background:#fff;
-            box-shadow:0 10px 30px rgba(0,0,0,0.12);
-        ">
-            <div class="sk-ww-google-reviews" data-embed-id="25629162"></div>
-            <script src="https://widgets.sociablekit.com/google-reviews/widget.js" defer></script>
-        </div>
-
-    </section>
 </main>
 
-<footer>
-    <div class="footer-inner">
-        <div>© L'instant d'une pause – Sète</div>
-        <div>Massages bien-être : pratiques de relaxation, sans visée thérapeutique ni médicale.</div>
-    </div>
-</footer>
+<!-- ================= SCRIPT MENU ================= -->
+<script>
+  const btn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("open");
+  });
+</script>
 
 </body>
 </html>
