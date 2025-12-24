@@ -1,4 +1,4 @@
-/* ================= RESET ================= */
+/* RESET */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,14 +6,14 @@
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Playfair Display", serif;
   background: #f6eee5;
   color: #3b2b20;
   line-height: 1.6;
 }
 
-/* ================= HEADER ================= */
-.site-header {
+/* HEADER */
+.header {
   background: #f6eee5;
   border-bottom: 1px solid rgba(0,0,0,0.05);
   position: sticky;
@@ -21,106 +21,106 @@ body {
   z-index: 10;
 }
 
-.header-top {
+.header-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 16px;
+  gap: 10px;
   text-align: center;
-  padding: 1.2rem 1rem 0.8rem;
 }
 
 .logo {
-  width: 110px;
-  margin-bottom: 0.5rem;
+  width: 80px;
 }
 
-.site-title {
-  font-family: "Playfair Display", serif;
+.title {
   font-size: 1.5rem;
-  letter-spacing: 0.14em;
-  color: #7a5f4d;
+  letter-spacing: 0.15em;
 }
 
-.site-subtitle {
-  font-family: "Playfair Display", serif;
-  font-size: 1.1rem;
-  color: #7a5f4d;
-  margin-top: 0.3rem;
+.subtitle {
+  font-size: 1.05rem;
+  opacity: 0.9;
 }
 
 .menu-btn {
-  margin-top: 0.8rem;
   font-size: 2rem;
   background: none;
   border: none;
   color: #7a5f4d;
   cursor: pointer;
+  margin-top: 8px;
 }
 
-/* ================= MENU ================= */
-.mobile-menu {
+/* MENU */
+.menu {
   display: none;
   flex-direction: column;
-  text-align: center;
-  padding-bottom: 1rem;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 20px;
 }
 
-.mobile-menu a {
-  padding: 0.6rem;
+.menu a {
   text-decoration: none;
   color: #3b2b20;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
 }
 
-.mobile-menu.open {
+.menu.open {
   display: flex;
 }
 
-/* ================= CONTENU ================= */
-.content {
-  padding: 1rem;
+/* MAIN */
+.main {
+  padding: 20px 16px;
 }
 
+/* HERO */
 .hero {
-  margin-top: 1rem;
-  border-radius: 20px;
-  overflow: hidden;
-  background: #000;
   position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  margin-bottom: 30px;
 }
 
 .hero img {
   width: 100%;
+  height: auto;
   display: block;
-  opacity: 0.85;
 }
 
 .hero-text {
   position: absolute;
   inset: 0;
-  padding: 1.5rem;
+  background: rgba(0,0,0,0.35);
+  color: #fff;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #fff;
 }
 
 .hero-text h2 {
-  font-family: "Playfair Display", serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
 }
 
 .hero-text p {
-  margin: 0.6rem 0 1rem;
+  margin-bottom: 16px;
 }
 
 .btn {
-  display: inline-block;
   background: #5b4032;
   color: #fff;
-  padding: 0.6rem 1.2rem;
-  border-radius: 999px;
   text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 999px;
   width: fit-content;
 }
 
-.text {
-  margin-top: 1.5rem;
+/* CONTENT */
+.content p {
+  font-size: 1.05rem;
 }
