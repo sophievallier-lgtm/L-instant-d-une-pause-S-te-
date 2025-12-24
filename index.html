@@ -1,142 +1,78 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'instant d'une pause – Massages bien-être à Sète</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Police Playfair -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <title>L’instant d’une pause – Massages bien-être à Sète</title>
 
-    <!-- Style général -->
-  <link rel="stylesheet" href="style.css?v=5"> 
+  <!-- Police -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<header class="header-bar">
-  <div class="header-inner">
 
-    <div class="header-brand">
-      <img src="Logo.png.PNG" alt="Logo L'instant d'une pause" class="logo-header">
-      <div class="brand-text">
-        <h1 class="header-title">L’INSTANT D’UNE PAUSE</h1>
-        <div class="brand-subtitle">Massages bien-être – Sète</div>
-      </div>
-    </div>
+<!-- ================= HEADER ================= -->
+<header class="site-header">
 
-    <button class="hamburger" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+  <div class="header-top">
+    <img src="Logo.png.PNG" alt="Logo L’instant d’une pause" class="logo">
 
-    <nav class="site-nav" id="siteNav">
-      <a href="index.html">Accueil</a>
-      <a href="massages.html">Massages</a>
-      <a href="tarifs.html">Tarifs</a>
-      <a href="galerie.html">Galerie</a>
-      <a href="avis.html">Avis clients</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <h1 class="site-title">L’INSTANT D’UNE PAUSE</h1>
+    <p class="site-subtitle">Massages bien-être – Sète</p>
 
+    <button class="menu-btn" id="menuBtn">☰</button>
   </div>
+
+  <nav class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Accueil</a>
+    <a href="massages.html">Massages</a>
+    <a href="tarifs.html">Tarifs</a>
+    <a href="galerie.html">Galerie</a>
+    <a href="avis.html">Avis clients</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
 </header>
 
-<script>
-  const btn = document.getElementById("menuBtn");
-  const nav = document.getElementById("siteNav");
-  btn.addEventListener("click", () => {
-    const open = nav.classList.toggle("open");
-    btn.setAttribute("aria-expanded", open ? "true" : "false");
-  });
-</script>
+<!-- ================= CONTENU ================= -->
+<main class="content">
 
-<main>
+  <section class="hero">
+    <img src="header.jpg" alt="Cabinet de massage">
+    <div class="hero-text">
+      <h2>Une pause qui vous ressemble</h2>
+      <p>
+        Pour une peau plus lisse, un corps délesté des tensions  
+        et un esprit profondément apaisé.
+      </p>
+      <a href="massages.html" class="btn">Découvrir les massages</a>
+    </div>
+  </section>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="hero-banner">
-            <img src="header.jpg" alt="Cabinet de massage – L'instant d'une pause">
-            <div class="hero-overlay">
-                <div class="hero-content">
-
-                    <h1 class="hero-title">Une pause qui vous ressemble</h1>
-
-                    <p class="hero-subtitle">
-                        Pour une peau plus lisse, un corps délesté des tensions  
-                        et un esprit profondément apaisé.
-                    </p>
-
-                    <div class="hero-actions">
-                        <a href="massages.html" class="btn btn-principal">Découvrir les massages</a>
-                        <a href="contact.html" class="btn btn-secondaire">Prendre rendez-vous</a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TEXTE D’ACCROCHE -->
-  <section class="section">
-  <p>
-    Je masse parce que j’ai toujours été sensible au corps, aux émotions qu’il porte
-    et à ce qu’il exprime sans mots. Pour moi, le massage est avant tout une rencontre :
-    un moment d’écoute, de présence et de respect, où chaque personne est accueillie telle
-    qu’elle est, dans son état du moment.
-  </p>
-
-  <p>
-    Lorsque je masse, je me laisse guider par mes ressentis et par ce que le corps me transmet.
-    Je n’applique pas de protocole figé : mes gestes s’adaptent, évoluent et se construisent
-    au fil de la séance. Chaque massage est unique, parce que chaque corps, chaque vécu
-    et chaque énergie le sont aussi.
-  </p>
-
-  <p>
-    Mon toucher est à la fois profond et enveloppant, parfois lent, parfois plus rythmé,
-    toujours juste. Il permet de relâcher les tensions, de déposer ce qui est trop lourd
-    et d’offrir un espace où le corps peut enfin lâcher prise en toute sécurité.
-  </p>
-
-  <p>
-    Au-delà de la détente physique, mes massages invitent à revenir à soi, à se recentrer
-    et à retrouver une sensation d’ancrage et de présence. C’est un temps pour respirer,
-    pour se reconnecter à ses sensations, pour s’autoriser à être pleinement là.
-  </p>
-
-  <p>
-    Je vous accueille dans un cocon chaleureux, avec bienveillance et sans jugement,
-    dans un espace dédié au relâchement et au mieux-être.
-  </p>
-
-  <p style="margin-top: 1rem;">
-    <em>
-      Les massages proposés sont des pratiques de détente, non médicales, non thérapeutiques
-      et non esthétiques.
-    </em>
-  </p>
-</section>
-    <!-- RÉSEAUX -->
-    <section class="section">
-        <h2>Me suivre</h2>
-        <div class="carte">
-            <div class="reseaux-links">
-
-                <a href="https://www.instagram.com/linstant.dune.pause" target="_blank">Instagram</a> •
-                <a href="https://g.co/kgs/kVZk9Ab" target="_blank">Google</a>
-            </div>
-        </div>
-    </section>
+  <section class="text">
+    <p>
+      Je masse parce que j’ai toujours été sensible au corps, aux émotions qu’il porte
+      et à ce qu’il exprime sans mots.
+    </p>
+  </section>
 
 </main>
 
-<!-- FOOTER -->
-<footer>
-    <div class="footer-inner">
-        <div>© L'instant d'une pause – Sète</div>
-        <div>Massages bien-être : pratiques de relaxation, sans visée thérapeutique ni médicale.</div>
-    </div>
-</footer>
+<!-- ================= SCRIPT MENU ================= -->
+<script>
+  const btn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("open");
+  });
+</script>
 
 </body>
 </html>
-<!-- test -->
