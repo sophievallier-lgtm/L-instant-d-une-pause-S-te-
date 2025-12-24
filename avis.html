@@ -19,44 +19,34 @@
   <div class="header-inner">
 
     <div class="header-brand">
-      <img
-        src="Logo.png.PNG"
-        alt="Logo L'instant d'une pause"
-        class="logo-header"
-      >
-
+      <img src="Logo.png.PNG" alt="Logo L'instant d'une pause" class="logo-header">
       <div class="brand-text">
         <h1 class="header-title">L’INSTANT D’UNE PAUSE</h1>
-        <span class="brand-subtitle">Massages bien-être – Sète</span>
+        <div class="brand-subtitle">Massages bien-être – Sète</div>
       </div>
     </div>
 
-    <button id="menu-btn" class="hamburger">☰</button>
+    <button class="hamburger" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
 
-    <nav id="menu">
-      <a class="nav-link" href="index.html">Accueil</a>
-      <a class="nav-link" href="massages.html">Massages</a>
-      <a class="nav-link" href="tarifs.html">Tarifs</a>
-      <a class="nav-link" href="galerie.html">Galerie</a>
-      <a class="nav-link" href="avis.html">Avis clients</a>
-      <a class="nav-link" href="contact.html">Contact</a>
+    <nav class="site-nav" id="siteNav">
+      <a href="index.html">Accueil</a>
+      <a href="massages.html">Massages</a>
+      <a href="tarifs.html">Tarifs</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="avis.html">Avis clients</a>
+      <a href="contact.html">Contact</a>
     </nav>
 
   </div>
 </header>
 
 <script>
-document.getElementById("menu-btn").onclick = function () {
-  const menu = document.getElementById("menu");
-  menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
-};
-</script>
-
-<script>
-document.getElementById("menu-btn").onclick = function () {
-  const menu = document.getElementById("menu");
-  menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-};
+  const btn = document.getElementById("menuBtn");
+  const nav = document.getElementById("siteNav");
+  btn.addEventListener("click", () => {
+    const open = nav.classList.toggle("open");
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+  });
 </script>
 
 <main>
