@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>L’instant d’une pause – Massages bien-être à Sète</title>
+  <title>L’instant d’une pause</title>
 
   <!-- Police -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,20 +13,22 @@
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
-<script src="menu.js"></script>
-</body>
+
+<body>
 
 <header class="site-header">
   <div class="header-wrap">
+
     <div class="brand">
-      <img class="brand-logo" src="Logo.png.PNG" alt="Logo L'instant d'une pause">
+      <img src="Logo.png.PNG" alt="Logo L'instant d'une pause" class="brand-logo">
       <div class="brand-text">
         <h1 class="brand-title">L’INSTANT D’UNE PAUSE</h1>
         <div class="brand-subtitle">Massages bien-être – Sète</div>
       </div>
     </div>
 
-    <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu">☰</button>
+
   </div>
 
   <nav class="site-nav" id="siteNav">
@@ -40,6 +42,7 @@
 </header>
 
 <main class="main">
+
   <section class="hero">
     <img src="header.jpg" alt="Cabinet de massage">
     <div class="hero-text">
@@ -48,7 +51,7 @@
         Pour une peau plus lisse, un corps délesté des tensions  
         et un esprit profondément apaisé.
       </p>
-      <a href="#" class="btn">Découvrir les massages</a>
+      <a href="massages.html" class="btn">Découvrir les massages</a>
     </div>
   </section>
 
@@ -58,19 +61,20 @@
       dans un espace dédié au relâchement et au mieux-être.
     </p>
   </section>
+
 </main>
 
+<!-- SCRIPT MENU : TOUJOURS JUSTE AVANT </body> -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const btn = document.getElementById("menuBtn");
   const nav = document.getElementById("siteNav");
-
-  if (!btn || !nav) return;
 
   btn.addEventListener("click", function () {
     nav.classList.toggle("open");
   });
 });
 </script>
+
 </body>
 </html>
